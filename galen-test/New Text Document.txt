@@ -8,9 +8,3 @@ galen test home.gspec -Dwebdriver.chrome.driver=/opt/chromedriver/chromedriver
 galen check home.gspec --url http://testapp.galenframework.com/ --size 1024x768 --htmlreport reports
 
 galen test home.gspec --url http://testapp.galenframework.com/
-
-----------
-git rm -r --cached .idea
-git rm -r --cached -site
-git rm -r --cached .jekyll-metadata
-git commit -m "trash was cleaned"
