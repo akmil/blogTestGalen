@@ -1,0 +1,48 @@
+{
+  "testId" : "1-home.gspec",
+  "name" : "home.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  home.gspec --url http://testapp.galenframework.com/ --size 1024x768 --htmlreport report -Dwebdriver.chrome.driver=C:\\Users\\Pavlo_Oliynyk\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\bin\\chromedriver",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: home.gspec included tags: ",
+          "status" : "info",
+          "time" : 1447954796553,
+          "sections" : [ {
+            "name" : "Header",
+            "objects" : [ {
+              "name" : "header-logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "home.gspec",
+                  "lineNumber" : 10
+                },
+                "name" : "left-of header-text 22 px",
+                "highlight" : [ "header-logo", "header-text" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "header-logo" : {
+              "area" : [ 48, 13, 48, 48 ]
+            },
+            "header-text" : {
+              "area" : [ 118, 20, 609, 40 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1447954796022,
+        "type" : "node"
+      } ],
+      "time" : 1447954787981,
+      "type" : "node"
+    } ]
+  }
+}
