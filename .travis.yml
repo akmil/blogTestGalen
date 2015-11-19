@@ -7,5 +7,5 @@ before_install:
   - java -version
   - mvn -version
   - phantomjs --version
-  - sudo npm install -g galenframework-cli
+  - npm install -g galenframework-cli
   - npm install -g grunt-cli
