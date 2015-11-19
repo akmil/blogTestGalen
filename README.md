@@ -1,4 +1,4 @@
 # blogTestGalen
 travis + galen
 
-Demo: http://blogTestGalen.github.io/
+Demo: http://akmil.github.io/blogTestGalen/
