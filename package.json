@@ -4,7 +4,7 @@
   "description": "travis + galen",
   "main": "index.html",
   "scripts": {
-    "test": "galen check home.gspec --url http://testapp.galenframework.com/ --size 1024x768 --htmlreport reports"
+    "test": "galen check home.gspec --url http://testapp.galenframework.com/ --size 1024x768 --htmlreport reports -Dwebdriver.chrome.driver=/opt/chromedriver/chromedriver"
   },
   "repository": {
     "type": "git",
