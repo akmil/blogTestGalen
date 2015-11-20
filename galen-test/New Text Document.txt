@@ -1,6 +1,23 @@
 galen config
 is
-Created config file
+1) npm install -g galenframework-cli  //установка galenframework глоб.
+2) Created 'config' file (копируем с сайта http://galenframework.com/docs/getting-started-configuration/ )
+3) добавляем в .travis.yml зависимости:
+        script: galen check galen-test/home.gspec --url http://127.0.0.1:4000/ --size 1024x768 --htmlreport reports
+
+before_install:
+    - npm install jekyll
+    - jekyll serve
+    - npm install
+    - npm install -g galenframework-cli
+    - export DISPLAY=:99.0
+    - sh -e /etc/init.d/xvfb start
+
+
+
+
+
+
 ------
 
 galen test home.gspec -Dwebdriver.chrome.driver=/opt/chromedriver/chromedriver
