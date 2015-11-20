@@ -1,9 +1,10 @@
 <header class="site-header">
 
-  <div class="wrapper">
+  <div class="wrapper" id="header">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    <p>my_page.url: {{ my_page.url | prepend: site.baseurl }}</p>
+    <a class="site-title" href="{{ site.baseurl }}/" >{{ site.title }}</a>
+    <img id="header-logo" src="images/header-icon.png">
+    <h1>my_page.url: {{ my_page.url | prepend: site.baseurl }}</h1>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
