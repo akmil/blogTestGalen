@@ -3,4 +3,7 @@ node_js:
   - "4.1"
 script: galen test home.gspec --htmlreport reports
 
+before_install:
+  - npm install selenium-webdriver
+  - npm install -g galenframework-cli
 
