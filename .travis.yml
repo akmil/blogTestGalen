@@ -7,7 +7,7 @@ script: galen check galen-test/home.gspec --url http://127.0.0.1:4000/blogTestGa
 
 before_install:
     - gem install jekyll
-    - jekyll build
+    - jekyll serve
     - npm install
     - npm install -g galenframework-cli
     - export DISPLAY=:99.0
