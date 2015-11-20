@@ -1,9 +1,15 @@
-galen config
-is
+galen config is:
+
 1) npm install -g galenframework-cli  //установка galenframework глоб.
+
 2) Created 'config' file (копируем с сайта http://galenframework.com/docs/getting-started-configuration/ )
-3) добавляем в .travis.yml зависимости:
-        script: galen check galen-test/home.gspec --url http://127.0.0.1:4000/ --size 1024x768 --htmlreport reports
+
+3) добавляем в .travis.yml зависимости (npm это node):
+language: node_js
+node_js:
+  - "4.1"
+
+script: galen check galen-test/home.gspec --url http://127.0.0.1:4000/ --size 1024x768 --htmlreport reports
 
 before_install:
     - npm install jekyll
