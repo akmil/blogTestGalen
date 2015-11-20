@@ -3,6 +3,8 @@ node_js:
   - "4.1"
 
 before_install:
+  - sudo apt-get install openjdk-7-jdk
+  - apt-get autoremove
   - java -version
   - mvn -version
   - phantomjs --version
