@@ -7,4 +7,4 @@
 
 = Header =
     header-logo:
-        left-of header-text 22 px
+        left-of header-text 22 to -248px px
