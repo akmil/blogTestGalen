@@ -13,6 +13,10 @@ galen test home.gspec --url http://testapp.galenframework.com/
 -----------
 script: galen test galen-test/home.test --htmlreport reports
 
+"scripts": {
+    "test": "grunt travis --verbose"
+  }
+
 before_install:
   - sudo apt-get install openjdk-7-jdk
   - java -version
@@ -21,3 +25,10 @@ before_install:
   - npm install -g galenframework-cli
   - npm install -g grunt-cli
   - npm install selenium-webdriver
+
+  ========================
+  before_install:
+    - npm install
+    - npm install -g galenframework-cli
+    - export DISPLAY=:99.0
+    - sh -e /etc/init.d/xvfb start

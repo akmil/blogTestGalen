@@ -2,13 +2,8 @@ language: node_js
 node_js:
   - "4.1"
 
-"scripts": {
-    "test": "grunt travis --verbose"
-  }
 
-before_install:
-  - npm install
-  - npm install -g galenframework-cli
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+script: galen test galen-test/home.test --htmlreport reports
+
+
 
