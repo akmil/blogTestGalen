@@ -2,8 +2,13 @@ language: node_js
 node_js:
   - "4.1"
 
+script: galen check galen-test/home.gspec --url http://testapp.galenframework.com/ --size 1024x768 --htmlreport reports
 
-script: galen test galen-test/home.test --htmlreport reports
+before_install:
+    - npm install
+    - npm install -g galenframework-cli
+    - export DISPLAY=:99.0
+    - sh -e /etc/init.d/xvfb start
 
 
 
