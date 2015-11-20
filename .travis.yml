@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "4.1"
-script: galen test home.gspec --htmlreport reports
+script: galen test galen-test/home.gspec --htmlreport reports
 
 before_install:
   - npm install -g galenframework-cli
