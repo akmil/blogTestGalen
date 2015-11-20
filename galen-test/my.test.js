@@ -1,5 +1,5 @@
 /**
- * Created by Pavlo_Oliinyk1 on 11/19/2015.
+ * not used
  */
 test("SauceLabs test for homepage on iPhone", function () {
     var driver = createGridDriver("http://ishubin:blabla-bla-bla-bla-blabla@ondemand.saucelabs.com:80/wd/hub", {
