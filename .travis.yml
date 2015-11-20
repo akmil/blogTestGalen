@@ -1,12 +1,13 @@
-language: node_js
+language: node_js, ruby
 node_js:
   - "4.1"
+rvm: 2.1
 
 script: galen check galen-test/home.gspec --url http://127.0.0.1:4000/blogTestGalen/ --size 1024x768 --htmlreport reports
 
 before_install:
-    - npm install jekyll
-    - jekyll serve
+    - gem install jekyll
+    - jekyll build
     - npm install
     - npm install -g galenframework-cli
     - export DISPLAY=:99.0
