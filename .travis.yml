@@ -1,11 +1,12 @@
-language: node_js
+language: node_js, ruby
 node_js:
   - "4.1"
+rvm: 2.1
 
 before_install:
     - npm install
     - npm install -g galenframework-cli
-    - npm install jekyll
+    - gem install jekyll
     - jekyll build
     - jekyll serve &
     - export DISPLAY=:99.0
@@ -15,6 +16,7 @@ before_install:
 cache:
   directories :
     - node_modules
+    - bundler
 
 notifications:
   email:
