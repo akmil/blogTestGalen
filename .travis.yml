@@ -5,6 +5,7 @@ node_js:
 before_install:
     - npm install
     - npm install -g galenframework-cli
+    - npm install jelyll
     - jelyll build
     - jelyll serve &
     - export DISPLAY=:99.0
