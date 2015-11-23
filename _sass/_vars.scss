@@ -1,15 +1,9 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
 
+$base-font: Helvetica, Arial, sans-serif;
 
+$lead-font-size:   1.5em;
+$body-font-size:   1em;
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-$base-font-family: "TMSansLEADINGFIXED-Regular", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -27,66 +21,39 @@ $white: #ffffff;
 $white-70: rgba(255, 255, 255, 0.7);
 
 
+/*Fonts*/
+$font-h1: "InterstateWGL-Black",$base-font;       // 54/16=3.37500
+$font-h2: "TMSansLEADINGFIXED-Bold",$base-font;   // 36
+$font-h3: "TMSansLEADINGFIXED-Bold",$base-font;   // 24
+$font-h4: "TMSansLEADINGFIXED-Bold",$base-font;   // 16
+$font-h5: "TMSansLEADINGFIXED-Regular",$base-font;// 16
+$font-h6: "TMSansLEADINGFIXED-Regular",$base-font;// 11
 
-Font Book
-$font-h1: "InterstateWGL-Black";
-$font-h2: "TMSansLEADINGFIXED-Bold";
-$font-h3: "TMSansLEADINGFIXED-Bold";
-$font-h4: "TMSansLEADINGFIXED-Bold";
-$font-h5: "TMSansLEADINGFIXED-Regular";
-$font-h6: "TMSansLEADINGFIXED-Regular";
 
-$font-lead: "SourceCodePro-Regular";
-$font-body: "SourceSansPro-Bold";
-$font-caption: "SourceSansPro-Regular";
-$font-pull-q: "TMSansLEADINGFIXED-Italic";
-$font-code: "TMSansLEADINGFIXED-Light";
+$font-lead: "TMSansLEADINGFIXED-Light",$base-font;      //24
+$font-body: "TMSansLEADINGFIXED-Regular",$base-font;    //16px
+$font-caption: "TMSansLEADINGFIXED-Italic",$base-font;  //16px
+$font-pull-q: "TMSansLEADINGFIXED-Italic",$base-font;   //24px
+$font-code: "SourceCodePro-Regular",$base-font;         //16px
 
+/*Sizes*/
+$size-h1: 3.375em;
+$size-h2: 2.25em;
+$size-h3: 1.5em;
+$size-h4: 1em;
+$size-h5: 1em;
+$size-h6: 0.6875em;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
- @include media-query($on-palm) {
-     .wrapper {
-         padding-right: $spacing-unit / 2;
-         padding-left: $spacing-unit / 2;
-     }
- }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+h1{
+  font: $font-h1;
+  font-size:$size-h1;
 }
-
-
-$font-Regular: "open_sansregular", arial, sans-serif;
-$font-Light: "open_sanslight", arial, sans-serif;
-$font-SemiBold: "open_sanssemibold", arial, sans-serif;
-
-$color: #1f2430;
-$color-p: #454545;
-$color-h: #303030;
-$color-a: #33b7ae;
-$color-button-green: #45837f;
-$color-button-grey: #949494;
-$color-grey: #a3a8aa;
-$color-border-bottom: #a3a8aa;
-$color-purple: #f16a8d;
+h2{
+  font: $font-h2 ;
+  font-size: $size-h2;
+}
 
 
 @mixin transition ($time: 0.35s){
@@ -118,7 +85,7 @@ $color-purple: #f16a8d;
   transform: rotate($rotate + deg);
 }
 
-@mixin placeholder($color: $color, $opacity: 1 ){
+@mixin placeholder($color, $opacity: 1 ){
   &::-webkit-input-placeholder {
     color: $color;
     opacity: $opacity;
@@ -136,6 +103,6 @@ $color-purple: #f16a8d;
     opacity: $opacity;
   }
 }
-@mixin width($w,$p){
-  width: $w - $p*2 + px;
+@mixin width($width,$padding){
+  width: $width - $padding*2 + px;
 }
