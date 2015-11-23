@@ -8,24 +8,17 @@ before_install:
         - npm install -g galenframework-cli
         - gem install jekyll
         - jekyll build
-
-
         - sh -e /etc/init.d/xvfb start
 cache:
-  directories :
+  directories:
     - node_modules
+    - bundler
 
 notifications:
     email: false
 
 # whitelist
-  branches:
-    only:
-     - master
-     - gh-pages
-     
-# blacklist
 branches:
-  except:
-    - legacy
-    - experimenta
+  only:
+    - master
+    - gh-pages
