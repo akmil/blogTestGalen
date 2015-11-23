@@ -5,16 +5,18 @@ node_js:
 before_install:
     - npm install
     - npm install -g galenframework-cli
-    - npm test
     - export DISPLAY=:99.0
     - sh -e /etc/init.d/xvfb start
+    - npm start > /dev/null &
+    - npm run update-webdriver
+    - sleep 1 # give server time to start
 
 cache:
   directories :
     -node_modules
 
 notifications:
-  slack:
+  email:
     on_success: never
     on_failure: never
     email: false
