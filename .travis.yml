@@ -3,12 +3,13 @@ node_js:
   - "4.1"
 rvm: 2.1
 
-report
+$ travis report
 
-token
+$ travis token
 
+$ travis whoami
 
-
+$ travis cache
 
 cache:
   directories :
