@@ -3,6 +3,8 @@ node_js:
   - "4.1"
 rvm: 2.1
 
+raw: /travis/build/akmil/blogTestGalen/_site/index.html
+
 before_install:
     - npm install
     - npm install -g galenframework-cli
