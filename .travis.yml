@@ -4,7 +4,7 @@ node_js:
 
 before_install:
     - npm install
-    - npm install --save-dev galenframework-cli
+    - npm install -g galenframework-cli
     - export DISPLAY=:99.0
     - sh -e /etc/init.d/xvfb start
     - npm test
