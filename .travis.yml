@@ -1,17 +1,20 @@
-language: node_js, ruby
+language: node_js
 node_js:
   - "4.1"
-rvm: 2.1
-
-script: galen check galen-test/home.gspec --url http://localhost:4000/blogTestGalen/ --size 1024x768 --htmlreport reports
 
 before_install:
     - npm install
     - npm install -g galenframework-cli
+    - npm test
     - export DISPLAY=:99.0
     - sh -e /etc/init.d/xvfb start
+
+cache:
+  directories :
+    -node_modules
 
 notifications:
   slack:
     on_success: never
     on_failure: never
+    email: false
