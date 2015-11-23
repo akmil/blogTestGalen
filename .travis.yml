@@ -1,9 +1,10 @@
-language: node_js, ruby
+language: node_js, rvm
 node_js:
   - "4.1"
 rvm: 2.1
 
 before_install:
+        
         - npm install
         - npm install -g galenframework-cli
         - gem install jekyll
