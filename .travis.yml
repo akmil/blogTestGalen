@@ -9,7 +9,7 @@ before_install:
         - gem install jekyll
         - jekyll build
 
-        
+
         - sh -e /etc/init.d/xvfb start
 cache:
   directories :
