@@ -23,3 +23,9 @@ notifications:
     only:
      - master
      - gh-pages
+     
+# blacklist
+branches:
+  except:
+    - legacy
+    - experimenta
