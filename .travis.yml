@@ -6,8 +6,8 @@ before_install:
         - rvm install 2.1.5
         - npm install
         - npm install -g galenframework-cli
-        - gem install jekyll
-        - jekyll build
+        - npm install jekyll
+        - jekyll serve &
         - sh -e /etc/init.d/xvfb start
 cache:
   directories:
