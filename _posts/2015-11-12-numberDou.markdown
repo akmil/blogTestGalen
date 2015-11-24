@@ -58,3 +58,41 @@ Content insdfdsfdsf   | Content in the second column
 | Content in the second column      | Content in the second column    | Content in the second column     |  Content in the second column    | Content in the second column           |
 | Content in the second column     | Content in the second column    |  Content in the second column    | Content in the second column     | Content in the second column           |
 
+#####test code
+
+``` html 
+ some code here
+    <!-- if you aren't using the accordion, uncomment this block: 
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+     -->
+```
+
+{% highlight html linenos %}
+   <!-- if you aren't using the accordion, uncomment this block:
+        <p class="external">
+            <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+        </p>
+    -->
+{% endhighlight %}
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+ 
+```python
+s = "Python syntax highlighting"
+print s
+```
+
+{% highlight ruby linenos%}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+
+Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap. Hashtag typewriter
+{% endhighlight %}

@@ -8,7 +8,7 @@ before_install:
         - npm install -g galenframework-cli
         - gem install jekyll
         - jekyll serve &
-        
+
 cache:
   directories:
     - node_modules
