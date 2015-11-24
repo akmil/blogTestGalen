@@ -4,7 +4,7 @@
   "description": "travis + galen",
   "main": "index.html",
   "scripts": {
-    "test": "galen check galen-test/home.gspec --url http://home/travis/build/akmil/blogTestGalen/_site  --size 1024x768 --htmlreport galen-test/reports/reports"
+    "test": "galen check galen-test/home.gspec --url http://localhost:4000/blogTestGalen/ --size 1024x768 --htmlreport galen-test/reports/reports"
   },
   "repository": {
     "type": "git",
