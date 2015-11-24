@@ -191,7 +191,7 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: $size-h3;
 }
 
 
@@ -209,7 +209,7 @@
     line-height: 1;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        font-size: $size-h2;
     }
 }
 

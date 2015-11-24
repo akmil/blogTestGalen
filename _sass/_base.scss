@@ -83,7 +83,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     color: $n1;
-    font-weight: $base-font-weight;
+    font-weight: $bold-font-weight;
 }
 
 
@@ -130,10 +130,11 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
+    font-size: $size-code;
+    font-family: $font-code;
+    border: 1px solid $code-border;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: $code-background-color;
 }
 
 code {
