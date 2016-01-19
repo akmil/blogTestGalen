@@ -5,7 +5,7 @@
 
 @objects
     menu-wrapper                css     .blogs div.body-wrapper
-    area-wrapper                css     .blogs > div.row.row-blogs
+    area-wrapper                css     .blogs div.row.row-blogs
     area-left                   css     .box-left
     area-right                  css     .box-right
 
