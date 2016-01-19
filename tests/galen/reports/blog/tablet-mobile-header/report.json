@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "tests/galen/blog/tablet-mobile-header.gspec",
+    "startedAt" : 1453124789621,
+    "endedAt" : 1453124797582,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 9,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 9
+    },
+    "testId" : "1-tests-galen-blog-tablet-mobile-header.gspec",
+    "failed" : false,
+    "duration" : 7961
+  } ]
+}

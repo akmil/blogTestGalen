@@ -1,0 +1,292 @@
+{
+  "testId" : "1-tests-galen-blog-mobile-footer.gspec",
+  "name" : "tests/galen/blog/mobile-footer.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  tests/galen/blog/mobile-footer.gspec --url localhost:4000/blogs --size 320x1024 --htmlreport tests/galen/reports/mobile-footer -Dwebdriver.chrome.driver=C:\\Users\\Pavlo_Oliynyk\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\bin\\chromedriver",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: tests/galen/blog/mobile-footer.gspec included tags: ",
+          "status" : "info",
+          "time" : 1453128516098,
+          "sections" : [ {
+            "name" : "Blogs page footer consist of six columns with blue titles",
+            "objects" : [ {
+              "name" : "global",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "count any nav-blocks-footer-* is 6",
+                "highlight" : [ "nav-blocks-footer-6", "nav-blocks-footer-5", "nav-blocks-footer-4", "nav-blocks-footer-3", "nav-blocks-footer-2", "nav-blocks-footer-1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "count any nav-item-heading-footer-* is 6",
+                "highlight" : [ "nav-item-heading-footer-1", "nav-item-heading-footer-2", "nav-item-heading-footer-5", "nav-item-heading-footer-6", "nav-item-heading-footer-3", "nav-item-heading-footer-4" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Blogs page footer at the bottom of the page",
+            "objects" : [ {
+              "name" : "footer",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "below top-content ~0 px",
+                "highlight" : [ "footer", "top-content" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Navigation test @desktop",
+            "objects" : [ {
+              "name" : "nav-item-heading-footer-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "text is \"Products & Docs\"",
+                "highlight" : [ "nav-item-heading-footer-1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 45
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-1" ]
+              } ]
+            }, {
+              "name" : "nav-item-heading-footer-2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 33
+                },
+                "name" : "text is \"Partners\"",
+                "highlight" : [ "nav-item-heading-footer-2" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "aligned vertically centered nav-item-heading-footer-2",
+                "highlight" : [ "nav-item-heading-footer-2", "nav-item-heading-footer-2" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 45
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-2" ]
+              } ]
+            }, {
+              "name" : "nav-item-heading-footer-3",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "text is \"Support\"",
+                "highlight" : [ "nav-item-heading-footer-3" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 45
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-3" ]
+              } ]
+            }, {
+              "name" : "nav-item-heading-footer-4",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 38
+                },
+                "name" : "text is \"Blogs\"",
+                "highlight" : [ "nav-item-heading-footer-4" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 45
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-4" ]
+              } ]
+            }, {
+              "name" : "nav-item-heading-footer-5",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 40
+                },
+                "name" : "text is \"Events\"",
+                "highlight" : [ "nav-item-heading-footer-5" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 45
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-5" ]
+              } ]
+            }, {
+              "name" : "nav-item-heading-footer-6",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 42
+                },
+                "name" : "text is \"Open Source\"",
+                "highlight" : [ "nav-item-heading-footer-6" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 45
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-6" ]
+              } ]
+            } ]
+          }, {
+            "name" : "block-1 (Products & Docs) text, align check",
+            "objects" : [ {
+              "name" : "nav-item-block-1-footer-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "text is \"APIs\"",
+                "highlight" : [ "nav-item-block-1-footer-1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 50
+                },
+                "name" : "aligned horizontally all nav-item-block-1-footer-2",
+                "highlight" : [ "nav-item-block-1-footer-1", "nav-item-block-1-footer-2" ]
+              } ]
+            }, {
+              "name" : "nav-item-block-1-footer-2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "text is \"SDKs\"",
+                "highlight" : [ "nav-item-block-1-footer-2" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "aligned horizontally all nav-item-block-1-footer-3",
+                "highlight" : [ "nav-item-block-1-footer-2", "nav-item-block-1-footer-3" ]
+              } ]
+            }, {
+              "name" : "nav-item-block-1-footer-3",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/mobile-footer.gspec",
+                  "lineNumber" : 55
+                },
+                "name" : "text is \"Widgets\"",
+                "highlight" : [ "nav-item-block-1-footer-3" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "nav-blocks-footer-6" : {
+              "area" : [ 0, 1646, 291, 81 ]
+            },
+            "nav-item-block-1-footer-1" : {
+              "area" : [ 66, 1203, 29, 21 ]
+            },
+            "nav-blocks-footer-5" : {
+              "area" : [ 0, 1565, 291, 81 ]
+            },
+            "nav-item-block-1-footer-3" : {
+              "area" : [ 169, 1203, 56, 21 ]
+            },
+            "footer" : {
+              "area" : [ 0, 1114, 291, 750 ]
+            },
+            "nav-item-block-1-footer-2" : {
+              "area" : [ 115, 1203, 35, 21 ]
+            },
+            "top-content" : {
+              "area" : [ 0, 0, 291, 1114 ]
+            },
+            "nav-item-heading-footer-1" : {
+              "area" : [ 15, 1169, 261, 24 ]
+            },
+            "nav-item-heading-footer-2" : {
+              "area" : [ 15, 1250, 261, 24 ]
+            },
+            "nav-blocks-footer-4" : {
+              "area" : [ 0, 1460, 291, 105 ]
+            },
+            "nav-item-heading-footer-5" : {
+              "area" : [ 15, 1565, 261, 24 ]
+            },
+            "nav-blocks-footer-3" : {
+              "area" : [ 0, 1355, 291, 105 ]
+            },
+            "nav-item-heading-footer-6" : {
+              "area" : [ 15, 1646, 261, 24 ]
+            },
+            "nav-blocks-footer-2" : {
+              "area" : [ 0, 1250, 291, 105 ]
+            },
+            "nav-item-heading-footer-3" : {
+              "area" : [ 15, 1355, 261, 24 ]
+            },
+            "nav-blocks-footer-1" : {
+              "area" : [ 0, 1169, 291, 81 ]
+            },
+            "nav-item-heading-footer-4" : {
+              "area" : [ 15, 1460, 261, 24 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1453128514979,
+        "type" : "node"
+      } ],
+      "time" : 1453128508347,
+      "type" : "node"
+    } ]
+  }
+}
