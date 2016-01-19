@@ -1,6 +1,7 @@
 ##
 #galen check tests/galen/blog/desktop-content.gspec --url localhost:4000/blogs --size 1229x1024 --htmlreport tests/galen/reports/desktop-con
 ##
+#galen check tests/galen/blog/desktop-content.gspec --url localhost:4000/blogs --size 1469x1024 --htmlreport tests/galen/reports/desktop-con
 
 @set
     white "rgba(255, 255, 255, 1)"

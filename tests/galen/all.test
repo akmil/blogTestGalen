@@ -1,3 +1,9 @@
+@@ parameterized
+    | deviceName | tag       | size     |
+    | Mobile     | mobile    | 320x480  |
+    | Tablet     | tablet    | 768x1024  |
+    | Desktop    | desktop   | 1440x1220 |
+
 @@ set
     #domain      127.0.0.1:4000
     domain      ticketmaster-api-staging.github.io
@@ -8,9 +14,9 @@
     blog        tests/galen/blog
 
 
-#Home page on desktop
-#    http://${domain} 1200x1080
-#        check ${home}/desktop.gspec --include "desktop"
+#Home page on ${deviceName} device
+#    http://${domain} ${size}
+#        check ${home}/desktop.gspec --include "${tag}"
 
 #Home page on tablet
 #    http://${domain} 768x1024
@@ -20,25 +26,17 @@
 #    http://${domain} 480x800
 #        check ${home}/mobile.gspec --include "mobile,all" --exclude "nomobile"
 
-
-#Prod-and-Docs page on desktop
-#    ${base_url}/products-and-docs/apis/getting-started/ 1200x1080
-#        check ${prDocs}/desktop-getting-started.gspec --include "desktop"
-
-#Prod-and-Docs page on tablet
-#    ${base_url}/products-and-docs/apis/getting-started/ 768x1024
-#        check ${prDocs}/tablet-getting-started.gspec --include "tablet"
-
-#Prod-and-Docs page on mobile
-#    ${base_url}/products-and-docs/apis/getting-started/ 320x800
-#        check ${prDocs}/mobile-getting-started.gspec --include "mobile" --exclude "nomobile"
+@@ disabled
+Prod-and-Docs page on ${deviceName} device
+    ${base_url}/products-and-docs/apis/getting-started/ ${size}
+        check ${prDocs}/desktop-getting-started.gspec --include "${tag}"
 
 ######
-Blogs page on mobile
+Blogs page on ${deviceName}
     ${base_url}/blogs/ 320x800
-        check ${blog}/mobile-footer.gspec --include "mobile" --exclude "nomobile"
-        check ${blog}/mobile-content.gspec --include "mobile"
-        check ${blog}/mobile-header.gspec --include "mobile"
+        check ${blog}/mobile-footer.gspec --include "${tag}"
+        check ${blog}/mobile-content.gspec --include "${tag}"
+        check ${blog}/mobile-header.gspec --include "${tag}"
         check ${blog}/tablet-mobile-header-menu.gspec --include "mobile"
 
 #Blogs page on tablet

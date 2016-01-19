@@ -1,5 +1,5 @@
 ##
-#galen check tests/galen/blog/mobile-footer.gspec --url localhost:4000/blogs --size 320x1024 --htmlreport tests/galen/reports/mobile-footer
+#galen check tests/galen/blog/mobile-footer.gspec --url localhost:4000/blogs --size 349x1024 --htmlreport tests/galen/reports/mobile-footer
 ##
 
 @set
