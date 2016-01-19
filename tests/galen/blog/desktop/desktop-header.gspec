@@ -1,5 +1,5 @@
 ##
-#galen check tests/galen/blog/desktop/desktop-header.gspec --url http://ticketmaster-api-staging.github.io/blogs --size 1469x1024 --htmlreport tests/galen/reports/desktop-header
+#galen check tests/galen/blog/desktop/desktop-header.gspec --url http://ticketmaster-api-staging.github.io/blogs --size 1469x1024 --htmlreport tests/galen/reports/blog/desktop-header
 ##
 
 @set
@@ -16,8 +16,8 @@
 
 = Blogs page desktop header (desktop-header.gspec) =
 #    @on desktop
-        global:
-            count any nav-item-* is 6
+        #global:
+        #    count any nav-item-* is 6
         global:
             count any nav-item-* is 12
 
