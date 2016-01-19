@@ -12,7 +12,7 @@
     header-menu                 css  #menu
     logo                        css  #header-logo img
     search-button               css  #search
-    nav-item-*                  css  #menu > a.nav-item
+    nav-item-*                  css  #menu > a
 
 = Blogs page desktop header (desktop-header.gspec) =
 #    @on desktop
