@@ -14,12 +14,12 @@ var reportData = {
       "name" : "Simple check",
       "status" : "info",
       "nodes" : [ {
-        "name" : "check  tests/galen/blog/tablet-mobile-header.gspec --url localhost:4000/blogs --size 420x1080 --htmlreport tests/galen/reports/blog/tablet-mobile-header -Dwebdriver.chrome.driver=C:\\Users\\Pavlo_Oliynyk\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\bin\\chromedriver",
+        "name" : "check  tests/galen/blog/tablet-mobile-header.gspec --url http://ticketmaster-api-staging.github.io/blogs --size 349x1080 --htmlreport tests/galen/reports/blog/tablet-mobile-header -Dwebdriver.chrome.driver=C:\\Users\\Pavlo_Oliynyk\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\bin\\chromedriver",
         "status" : "info",
         "nodes" : [ {
           "name" : "Check layout: tests/galen/blog/tablet-mobile-header.gspec included tags: ",
-          "status" : "info",
-          "time" : 1453124797262,
+          "status" : "error",
+          "time" : 1453197731174,
           "sections" : [ {
             "name" : "two content areas under the header row (tablet-mobile-header.gspec)",
             "objects" : [ {
@@ -28,7 +28,7 @@ var reportData = {
                 "status" : "info",
                 "place" : {
                   "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
-                  "lineNumber" : 15
+                  "lineNumber" : 17
                 },
                 "name" : "visible",
                 "highlight" : [ "logo" ]
@@ -36,17 +36,18 @@ var reportData = {
                 "status" : "info",
                 "place" : {
                   "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
-                  "lineNumber" : 16
+                  "lineNumber" : 18
                 },
                 "name" : "width > 10 % of screen/width",
                 "highlight" : [ "logo" ]
               }, {
-                "status" : "info",
+                "status" : "error",
                 "place" : {
                   "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
-                  "lineNumber" : 17
+                  "lineNumber" : 19
                 },
                 "name" : "inside partly menu-wrapper ~23 px left, 20 to 30px top",
+                "errors" : [ "\"logo\" is 15px left which is not in range of 21 to 25px" ],
                 "highlight" : [ "logo", "menu-wrapper" ]
               } ]
             }, {
@@ -55,7 +56,7 @@ var reportData = {
                 "status" : "info",
                 "place" : {
                   "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
-                  "lineNumber" : 20
+                  "lineNumber" : 22
                 },
                 "name" : "visible",
                 "highlight" : [ "search-button" ]
@@ -63,7 +64,7 @@ var reportData = {
                 "status" : "info",
                 "place" : {
                   "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
-                  "lineNumber" : 21
+                  "lineNumber" : 23
                 },
                 "name" : "inside partly menu-wrapper ~52 px right, 30 to 34px top",
                 "highlight" : [ "search-button", "menu-wrapper" ]
@@ -74,7 +75,7 @@ var reportData = {
                 "status" : "info",
                 "place" : {
                   "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
-                  "lineNumber" : 24
+                  "lineNumber" : 26
                 },
                 "name" : "visible",
                 "highlight" : [ "menu-btn" ]
@@ -82,7 +83,7 @@ var reportData = {
                 "status" : "info",
                 "place" : {
                   "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
-                  "lineNumber" : 25
+                  "lineNumber" : 27
                 },
                 "name" : "inside partly menu-wrapper ~6 px right, 30 to 34px top",
                 "highlight" : [ "menu-btn", "menu-wrapper" ]
@@ -96,9 +97,9 @@ var reportData = {
                 "status" : "info",
                 "place" : {
                   "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
-                  "lineNumber" : 29
+                  "lineNumber" : 31
                 },
-                "name" : "aligned horizontally centered  menu-btn 3px search-button",
+                "name" : "aligned horizontally centered menu-btn 3px search-button",
                 "highlight" : [ "logo", "menu-btn" ]
               } ]
             }, {
@@ -107,7 +108,7 @@ var reportData = {
                 "status" : "info",
                 "place" : {
                   "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
-                  "lineNumber" : 32
+                  "lineNumber" : 34
                 },
                 "name" : "absent",
                 "highlight" : [ ]
@@ -116,25 +117,25 @@ var reportData = {
           } ],
           "objects" : {
             "menu-wrapper" : {
-              "area" : [ 0, 0, 391, 57 ]
+              "area" : [ 0, 0, 320, 57 ]
             },
             "logo" : {
-              "area" : [ 23, 23, 181, 42 ]
+              "area" : [ 15, 23, 181, 42 ]
             },
             "search-button" : {
-              "area" : [ 313, 34, 26, 26 ]
+              "area" : [ 242, 34, 26, 26 ]
             },
             "menu-btn" : {
-              "area" : [ 359, 32, 26, 26 ]
+              "area" : [ 288, 32, 26, 26 ]
             }
           },
           "screenshot" : "layout-1-screenshot.png",
           "type" : "layout"
         } ],
-        "time" : 1453124796504,
+        "time" : 1453197730445,
         "type" : "node"
       } ],
-      "time" : 1453124789623,
+      "time" : 1453197724218,
       "type" : "node"
     } ]
   }
