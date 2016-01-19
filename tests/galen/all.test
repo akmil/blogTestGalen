@@ -38,12 +38,13 @@
 #        check ${prDocs}/mobile-getting-started.gspec --include "mobile" --exclude "nomobile"
 
 ######
+@@disable
 Blogs page on mobile
     ${base_url}/blogs/ ${mobile_size}
         check ${blog}/mobile-footer.gspec --include "mobile" --exclude "nomobile"
         check ${blog}/mobile-content.gspec --include "mobile" --exclude "nomobile"
         check ${blog}/mobile-header.gspec --include "mobile" --exclude "nomobile"
-        check ${blog}/tablet-mobile-header-menu.gspec --include "mobile"
+        check ${blog}/mobile-header-menu.gspec --include "mobile"
 
 #Blogs page on tablet
 #    ${base_url}/blogs/ 768x1024
