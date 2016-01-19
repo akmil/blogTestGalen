@@ -1,5 +1,5 @@
 ##
-#galen check tests/galen/blog/desktop-header.gspec --url http://ticketmaster-api-staging.github.io/blogs --size 1229x1024 --htmlreport tests/galen/reports/desktop
+#galen check tests/galen/blog/desktop/desktop-header.gspec --url http://ticketmaster-api-staging.github.io/blogs --size 1469x1024 --htmlreport tests/galen/reports/desktop-header
 ##
 
 @set
@@ -14,12 +14,12 @@
     search-button               css  #search
     nav-item-*                  css  #menu a
 
-= Blogs page desktop header =
-    @on desktop
+= Blogs page desktop header (desktop-header.gspec) =
+#    @on desktop
         global:
             count any nav-item-* is 6
 
-    @on desktop
+#    @on desktop
         logo:
             visible
             width > 10 % of screen/width
