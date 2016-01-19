@@ -1,4 +1,4 @@
-@import desktop/tablet-header.gspec
-@import desktop/tablet-content.gspec
-@import desktop/tablet-header-menu.gspec
+@import tablet/tablet-header.gspec
+@import tablet/tablet-content.gspec
+@import tablet/tablet-header-menu.gspec
 # keyword @import - not saw in local run test on Windows (becouse of '/' in path)

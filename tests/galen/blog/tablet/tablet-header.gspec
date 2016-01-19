@@ -16,7 +16,7 @@
         logo:
             visible
             width > 10 % of screen/width
-            inside partly menu-wrapper ~23 px left, 20 to 30px top
+            inside partly menu-wrapper ~15 px left, 20 to 30px top
 
         search-button:
             visible
@@ -28,7 +28,8 @@
 
 = TM logo, the header menu and the search button in one row=
         logo:
-            aligned horizontally centered menu-btn 3px search-button
+            aligned horizontally centered menu-btn 3px
+            aligned horizontally centered search-button 3px
 
         menu-btn-close:
             absent
