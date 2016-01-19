@@ -45,17 +45,14 @@ Prod-and-Docs page on mobile
 
 Blogs page on mobile
     ${base_url}/blogs/ ${mobile_size}
-        check ${blog}/mobile-footer.gspec --include "mobile" --exclude "nomobile"
-        check ${blog}/mobile-content.gspec --include "mobile" --exclude "nomobile"
-        check ${blog}/mobile-header.gspec --include "mobile" --exclude "nomobile"
-        check ${blog}/mobile-header-menu.gspec --include "mobile"
+        check ${blog}/mobile-blog.gspec --include "mobile" --exclude "nomobile"
 
-
+@@ disabled
 Blogs page on tablet
     ${base_url}/blogs/ ${tablet_size}
         check ${blog}/tablet-blog.gspec --include "tablet"
 
-
+@@ disabled
 Blogs page on desktop
     ${base_url}/blogs/ ${desktop_size}
         check ${blog}/desktop-blog.gspec --include "desktop"
