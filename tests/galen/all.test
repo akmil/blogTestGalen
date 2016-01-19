@@ -27,7 +27,7 @@
 #        check ${home}/tablet.gspec --include "tablet,all" --exclude "nomobile"
 
 #Home page on mobile
-#    http://${domain} 480x800
+#    http://${domain} 320x800
 #        check ${home}/mobile.gspec --include "mobile,all" --exclude "nomobile"
 
 
@@ -45,7 +45,7 @@
 
 ######
 Blogs page on mobile
-    ${base_url}/blogs/ ${mobile_size}
+    ${base_url}/blogs/ 320x800
         check ${blog}/mobile-footer.gspec --include "mobile" --exclude "nomobile"
         check ${blog}/mobile-content.gspec --include "mobile"
         check ${blog}/mobile-header.gspec --include "mobile"
