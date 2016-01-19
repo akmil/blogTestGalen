@@ -1,9 +1,3 @@
-@@ parameterized
-    | deviceName | tag       | size     |
-    | Mobile     | mobile    | 320x480  |
-    | Tablet     | tablet    | 768x1024  |
-    | Desktop    | desktop   | 1440x1220 |
-
 @@ set
     #domain      127.0.0.1:4000
     domain      ticketmaster-api-staging.github.io
