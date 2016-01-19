@@ -1,6 +1,6 @@
 ##
-#galen check tests/galen/blog/tablet-mobile-content.gspec --url localhost:4000/blogs --size 768x1080 --htmlreport tests/galen/reports/blog/tablet-mobile-content
-#galen check tests/galen/blog/tablet-mobile-content.gspec --url localhost:4000/blogs --size 320x1080 --htmlreport tests/galen/reports/blog/tablet-mobile-content
+#galen check tests/galen/blog/mobile-content.gspec --url localhost:4000/blogs --size 320x1080 --htmlreport tests/galen/reports/blog/mobile-content
+#galen check tests/galen/blog/mobile-content.gspec --url http://ticketmaster-api-staging.github.io/blogs --size 349x1080 --htmlreport tests/galen/reports/blog/mobile-content
 ##
 
 @objects

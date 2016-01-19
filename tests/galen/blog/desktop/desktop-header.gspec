@@ -1,5 +1,5 @@
 ##
-#galen check tests/galen/blog/desktop-header.gspec --url localhost:4000/blogs --size 1229x1024 --htmlreport tests/galen/reports/desktop
+#galen check tests/galen/blog/desktop-header.gspec --url http://ticketmaster-api-staging.github.io/blogs --size 1229x1024 --htmlreport tests/galen/reports/desktop
 ##
 
 @set
@@ -24,7 +24,7 @@
             visible
             width > 10 % of screen/width
             inside menu-wrapper 10 px left, 20 to 30px top
-            near header-menu ~ 110 px left
+            near header-menu ~ 42 px left
 
         search-button:
             visible
