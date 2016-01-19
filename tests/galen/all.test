@@ -38,7 +38,8 @@
 #        check ${prDocs}/mobile-getting-started.gspec --include "mobile" --exclude "nomobile"
 
 ######
-@@disable
+
+@@ disabled
 Blogs page on mobile
     ${base_url}/blogs/ ${mobile_size}
         check ${blog}/mobile-footer.gspec --include "mobile" --exclude "nomobile"

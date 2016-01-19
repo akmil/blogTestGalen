@@ -11,7 +11,7 @@
     logo                        css  .blogs #header-logo img
     search                      css  .blogs #search
 
-=  two content areas under the header row (tablet-mobile-header.gspec)=
+=  two content areas under the header row (mobile-header.gspec)=
 #    @on mobile
         logo:
             visible

@@ -51,6 +51,7 @@
         area-right:
             css padding-top is "47px"
             css padding-bottom is "47px"
+
         area-left:
             css padding-top is "40px"
             css padding-bottom is "40px"
