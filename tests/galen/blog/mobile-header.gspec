@@ -9,16 +9,16 @@
     menu-btn                    css  .blogs #menu-btn
     menu-btn-close              css  .blogs #menu-btn .tm-close
     logo                        css  .blogs #header-logo img
-    search-button               css  .blogs a #search .white
+    search                      css  .blogs #search
 
 =  two content areas under the header row (tablet-mobile-header.gspec)=
-    @on tablet, mobile
+    @on mobile
         logo:
             visible
             width > 10 % of screen/width
             inside partly menu-wrapper 10 to 30px left, 20 to 30px top
 
-        search-button:
+        search:
             visible
             inside partly menu-wrapper ~52 px right, 30 to 34px top
 
