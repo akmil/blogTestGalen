@@ -6,7 +6,7 @@ before_install:
   - rvm install 2.1.5
   - npm install
   - npm install -g galenframework-cli
-  - gem install jekyll
+#  - gem install jekyll
 # - jekyll serve &
 
 cache:
