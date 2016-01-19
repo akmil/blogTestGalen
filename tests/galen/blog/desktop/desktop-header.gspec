@@ -12,12 +12,14 @@
     header-menu                 css  #menu
     logo                        css  #header-logo img
     search-button               css  #search
-    nav-item-*                  css  #menu > a
+    nav-item-*                  css  #menu a
 
 = Blogs page desktop header (desktop-header.gspec) =
 #    @on desktop
-        global:
-            count any nav-item-* is 6
+    global:
+        count any nav-item-* is 6
+    global:
+        count any nav-item-* is 12
 
 #    @on desktop
         logo:
