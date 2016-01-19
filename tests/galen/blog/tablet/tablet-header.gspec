@@ -28,7 +28,7 @@
 
 = TM logo, the header menu and the search button in one row=
         logo:
-            aligned horizontally centered menu-btn 3px search-button
+            aligned horizontally centered menu-btn , search-button 3px
 
         menu-btn-close:
             absent
