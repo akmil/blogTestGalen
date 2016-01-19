@@ -39,7 +39,7 @@
 
 ######
 Blogs page on mobile
-    ${base_url}/blogs/ 320x800
+    ${base_url}/blogs/ ${mobile_size}
         check ${blog}/mobile-footer.gspec --include "mobile" --exclude "nomobile"
         check ${blog}/mobile-content.gspec --include "mobile" --exclude "nomobile"
         check ${blog}/mobile-header.gspec --include "mobile" --exclude "nomobile"
