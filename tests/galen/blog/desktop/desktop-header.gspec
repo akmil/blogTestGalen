@@ -39,8 +39,6 @@
         logo:
             aligned horizontally centered  search-button 3px
 
-        logo:
-            aligned horizontally centered  header-menu, search-button 3px
 
 = I see such menu items in the header menu =
         nav-item-1:
