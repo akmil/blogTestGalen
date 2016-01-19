@@ -19,7 +19,7 @@
         #global:
         #    count any nav-item-* is 6
         global:
-            count any nav-item-* is 12
+            count any nav-item-* is 6 to 12
 
 #    @on desktop
         logo:

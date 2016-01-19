@@ -47,14 +47,12 @@ Blogs page on mobile
         check ${blog}/mobile-header.gspec --include "mobile" --exclude "nomobile"
         check ${blog}/mobile-header-menu.gspec --include "mobile"
 
-@@ disabled
+
 Blogs page on tablet
     ${base_url}/blogs/ ${tablet_size}
-        check ${blog}/tablet-content.gspec --include "tablet"
-        check ${blog}/tablet-header.gspec --include "tablet, mobile"
-        check ${blog}/tablet-header-menu.gspec --include "tablet, mobile"
+        check ${blog}/tablet-blog.gspec --include "tablet"
 
-
+@@ disabled
 Blogs page on desktop
     ${base_url}/blogs/ ${desktop_size}
         check ${blog}/desktop-blog.gspec --include "desktop"
