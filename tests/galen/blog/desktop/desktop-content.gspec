@@ -41,4 +41,6 @@
 
 = I see the TM logo, the header menu and the search button in one row=
         logo:
-            aligned horizontally centered  header-menu 3px search-button
+            aligned horizontally centered  header-menu 3px
+        logo:
+            aligned horizontally centered  search-button 3px

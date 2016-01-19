@@ -57,6 +57,4 @@ Blogs page on tablet
 
 Blogs page on desktop
     ${base_url}/blogs/ ${desktop_size}
-        check ${blog}/desktop-content.gspec --include "desktop"
-        check ${blog}/desktop-header.gspec --include "desktop"
-        check ${blog}/desktop-tablet-footer.gspec --include "desktop"
+        check ${blog}/desktop-blog.gspec --include "desktop"
