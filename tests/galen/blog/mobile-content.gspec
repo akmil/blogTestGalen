@@ -10,13 +10,13 @@
     area-right                  css     .box-right
 
 = I see two content areas under the header row (tablet-mobile-content.gspec) =
-#    @on tablet,mobile
+    @on tablet,mobile
         area-left:
             visible
 
         area-wrapper:
             visible
-            below menu-wrapper 90 to 104px
+            below menu-wrapper 50 to 60px
             width > 95% of screen/width
 
 = I see that the header row and the content areas row have one picture background =
@@ -29,7 +29,7 @@
             inside area-wrapper 0px top
 
         area-right:
-            below area-left ~53px
+            below area-left ~20px
 
 =  I see that the first content area higher than the second content area. =
         area-left:
