@@ -12,10 +12,10 @@
     search                      css  .blogs #search
 
 =  two content areas under the header row (tablet-mobile-header.gspec)=
-    @on mobile
+#    @on mobile
         logo:
             visible
-            width > 10 % of screen/width
+            width > 50 % of screen/width
             inside partly menu-wrapper 10 to 30px left, 20 to 30px top
 
         search:
@@ -28,7 +28,9 @@
 
 = TM logo, the header menu and the search button in one row=
         logo:
-            aligned horizontally centered menu-btn 3px , aligned horizontally centered search 3px
+            aligned horizontally centered menu-btn 3px
+        logo:
+            aligned horizontally centered search 3px
 
         menu-btn-close:
             absent
