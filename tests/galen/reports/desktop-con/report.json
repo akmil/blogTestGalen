@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "tests/galen/blog/desktop-content.gspec",
+    "startedAt" : 1451487431017,
+    "endedAt" : 1451487440681,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 3,
+      "errors" : 25,
+      "warnings" : 0,
+      "total" : 28
+    },
+    "testId" : "1-tests-galen-blog-desktop-content.gspec",
+    "failed" : true,
+    "duration" : 9664
+  } ]
+}

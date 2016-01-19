@@ -1,0 +1,134 @@
+{
+  "testId" : "1-tests-galen-blog-tablet-mobile-header.gspec",
+  "name" : "tests/galen/blog/tablet-mobile-header.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  tests/galen/blog/tablet-mobile-header.gspec --url localhost:4000/blogs --size 320x1080 --htmlreport tests/galen/reports/blog/tablet-mobile-content -Dwebdriver.chrome.driver=C:\\Users\\Pavlo_Oliynyk\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\bin\\chromedriver",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: tests/galen/blog/tablet-mobile-header.gspec included tags: ",
+          "status" : "error",
+          "time" : 1453124452146,
+          "sections" : [ {
+            "name" : "two content areas under the header row (tablet-mobile-header.gspec)",
+            "objects" : [ {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "visible",
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "width > 10 % of screen/width",
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "inside partly menu-wrapper ~23 px left, 20 to 30px top",
+                "highlight" : [ "logo", "menu-wrapper" ]
+              } ]
+            }, {
+              "name" : "search-button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "visible",
+                "highlight" : [ "search-button" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "inside partly menu-wrapper ~52 px right, 30 to 34px top",
+                "highlight" : [ "search-button", "menu-wrapper" ]
+              } ]
+            }, {
+              "name" : "menu-btn",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "visible",
+                "highlight" : [ "menu-btn" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 25
+                },
+                "name" : "inside partly menu-wrapper ~6 px right, 30 to 34px top",
+                "highlight" : [ "menu-btn", "menu-wrapper" ]
+              } ]
+            } ]
+          }, {
+            "name" : "TM logo, the header menu and the search button in one row",
+            "objects" : [ {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 29
+                },
+                "name" : "aligned horizontally centered  menu-btn 3px search-button",
+                "errors" : [ "\"menu-btn\" is not aligned horizontally centered with \"logo\". Offset is 6px" ],
+                "highlight" : [ "logo", "menu-btn" ]
+              } ]
+            }, {
+              "name" : "menu-btn-close",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "absent",
+                "highlight" : [ ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "menu-wrapper" : {
+              "area" : [ 0, 0, 291, 47 ]
+            },
+            "logo" : {
+              "area" : [ 23, 23, 140, 32 ]
+            },
+            "search-button" : {
+              "area" : [ 213, 34, 26, 26 ]
+            },
+            "menu-btn" : {
+              "area" : [ 259, 32, 26, 26 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1453124450707,
+        "type" : "node"
+      } ],
+      "time" : 1453124446145,
+      "type" : "node"
+    } ]
+  }
+}

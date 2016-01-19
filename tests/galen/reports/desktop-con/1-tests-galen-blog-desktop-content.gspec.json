@@ -1,0 +1,328 @@
+{
+  "testId" : "1-tests-galen-blog-desktop-content.gspec",
+  "name" : "tests/galen/blog/desktop-content.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  tests/galen/blog/desktop-content.gspec --url localhost:4000/blogs --size 1229x1024 --htmlreport tests/galen/reports/desktop-con -Dwebdriver.chrome.driver=C:\\Users\\Pavlo_Oliynyk\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\bin\\chromedriver",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: tests/galen/blog/desktop-content.gspec included tags: ",
+          "status" : "error",
+          "time" : 1451487440323,
+          "sections" : [ {
+            "name" : "Blogs page desktop content",
+            "objects" : [ {
+              "name" : "area-left",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "visible",
+                "highlight" : [ "area-left" ]
+              } ]
+            }, {
+              "name" : "body-wrapper",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "visible",
+                "highlight" : [ "body-wrapper" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "below area-left 100 to 101px",
+                "errors" : [ "\"body-wrapper\" is -648px below \"area-left\" which is not in range of 100 to 101px" ],
+                "highlight" : [ "body-wrapper", "area-left" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "below area-right 100 to 101px",
+                "errors" : [ "\"body-wrapper\" is -648px below \"area-right\" which is not in range of 100 to 101px" ],
+                "highlight" : [ "body-wrapper", "area-right" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "width > 10 % of screen/width",
+                "highlight" : [ "body-wrapper" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "inside menu-wrapper 10 px left, 20 to 30px top",
+                "errors" : [ "Cannot find locator for \"menu-wrapper\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "near header-menu ~ 110 px left",
+                "errors" : [ "Cannot find locator for \"header-menu\" in page spec" ],
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "search-button",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 35
+                },
+                "name" : "visible",
+                "errors" : [ "Cannot find locator for \"search-button\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "inside menu-wrapper ~10 px right, 30 to 32px top",
+                "errors" : [ "Cannot find locator for \"search-button\" in page spec" ],
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "header-menu",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 39
+                },
+                "name" : "visible",
+                "errors" : [ "Cannot find locator for \"header-menu\" in page spec" ],
+                "highlight" : [ ]
+              } ]
+            } ]
+          }, {
+            "name" : "I see the TM logo, the header menu and the search button in one row",
+            "objects" : [ {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 43
+                },
+                "name" : "aligned horizontally centered  header-menu 3px search-button",
+                "errors" : [ "Cannot find locator for \"logo\" in page spec" ],
+                "highlight" : [ ]
+              } ]
+            } ]
+          }, {
+            "name" : "I see such menu items in the header menu",
+            "objects" : [ {
+              "name" : "nav-item-1",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 47
+                },
+                "name" : "text is \"PRODUCTS & DOCS\"",
+                "errors" : [ "Cannot find locator for \"nav-item-1\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "aligned horizontally all nav-item-2",
+                "errors" : [ "Cannot find locator for \"nav-item-1\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "css color is \"rgba(255, 255, 255, 0.7)\"",
+                "errors" : [ "Cannot find locator for \"nav-item-1\" in page spec" ],
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "nav-item-2",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 51
+                },
+                "name" : "text is \"PARTNERS\"",
+                "errors" : [ "Cannot find locator for \"nav-item-2\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "aligned horizontally all nav-item-3",
+                "errors" : [ "Cannot find locator for \"nav-item-2\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "css color is \"rgba(255, 255, 255, 0.7)\"",
+                "errors" : [ "Cannot find locator for \"nav-item-2\" in page spec" ],
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "nav-item-3",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 55
+                },
+                "name" : "text is \"SUPPORT\"",
+                "errors" : [ "Cannot find locator for \"nav-item-3\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 56
+                },
+                "name" : "aligned horizontally all nav-item-4",
+                "errors" : [ "Cannot find locator for \"nav-item-3\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 57
+                },
+                "name" : "css color is \"rgba(255, 255, 255, 0.7)\"",
+                "errors" : [ "Cannot find locator for \"nav-item-3\" in page spec" ],
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "nav-item-4",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 59
+                },
+                "name" : "text is \"BLOGS\"",
+                "errors" : [ "Cannot find locator for \"nav-item-4\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 60
+                },
+                "name" : "aligned horizontally all nav-item-5",
+                "errors" : [ "Cannot find locator for \"nav-item-4\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 61
+                },
+                "name" : "css color is \"rgba(255, 255, 255, 1)\"",
+                "errors" : [ "Cannot find locator for \"nav-item-4\" in page spec" ],
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "nav-item-5",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 63
+                },
+                "name" : "text is \"EVENTS\"",
+                "errors" : [ "Cannot find locator for \"nav-item-5\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 64
+                },
+                "name" : "aligned horizontally all nav-item-6",
+                "errors" : [ "Cannot find locator for \"nav-item-5\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 65
+                },
+                "name" : "css color is \"rgba(255, 255, 255, 0.7)\"",
+                "errors" : [ "Cannot find locator for \"nav-item-5\" in page spec" ],
+                "highlight" : [ ]
+              } ]
+            }, {
+              "name" : "nav-item-6",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 67
+                },
+                "name" : "text is \"OPEN SOURCE\"",
+                "errors" : [ "Cannot find locator for \"nav-item-6\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-content.gspec",
+                  "lineNumber" : 68
+                },
+                "name" : "css color is \"rgba(255, 255, 255, 0.7)\"",
+                "errors" : [ "Cannot find locator for \"nav-item-6\" in page spec" ],
+                "highlight" : [ ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "body-wrapper" : {
+              "area" : [ 0, 0, 1200, 1000 ]
+            },
+            "area-left" : {
+              "area" : [ 30, 176, 750, 472 ]
+            },
+            "area-right" : {
+              "area" : [ 810, 176, 360, 472 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1451487438928,
+        "type" : "node"
+      } ],
+      "time" : 1451487431019,
+      "type" : "node"
+    } ]
+  }
+}

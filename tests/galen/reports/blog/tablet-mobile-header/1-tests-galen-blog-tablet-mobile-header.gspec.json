@@ -1,0 +1,134 @@
+{
+  "testId" : "1-tests-galen-blog-tablet-mobile-header.gspec",
+  "name" : "tests/galen/blog/tablet-mobile-header.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  tests/galen/blog/tablet-mobile-header.gspec --url http://ticketmaster-api-staging.github.io/blogs --size 349x1080 --htmlreport tests/galen/reports/blog/tablet-mobile-header -Dwebdriver.chrome.driver=C:\\Users\\Pavlo_Oliynyk\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\bin\\chromedriver",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: tests/galen/blog/tablet-mobile-header.gspec included tags: ",
+          "status" : "error",
+          "time" : 1453197731174,
+          "sections" : [ {
+            "name" : "two content areas under the header row (tablet-mobile-header.gspec)",
+            "objects" : [ {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "visible",
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "width > 10 % of screen/width",
+                "highlight" : [ "logo" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 19
+                },
+                "name" : "inside partly menu-wrapper ~23 px left, 20 to 30px top",
+                "errors" : [ "\"logo\" is 15px left which is not in range of 21 to 25px" ],
+                "highlight" : [ "logo", "menu-wrapper" ]
+              } ]
+            }, {
+              "name" : "search-button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "visible",
+                "highlight" : [ "search-button" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "inside partly menu-wrapper ~52 px right, 30 to 34px top",
+                "highlight" : [ "search-button", "menu-wrapper" ]
+              } ]
+            }, {
+              "name" : "menu-btn",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "visible",
+                "highlight" : [ "menu-btn" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "inside partly menu-wrapper ~6 px right, 30 to 34px top",
+                "highlight" : [ "menu-btn", "menu-wrapper" ]
+              } ]
+            } ]
+          }, {
+            "name" : "TM logo, the header menu and the search button in one row",
+            "objects" : [ {
+              "name" : "logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "aligned horizontally centered menu-btn 3px search-button",
+                "highlight" : [ "logo", "menu-btn" ]
+              } ]
+            }, {
+              "name" : "menu-btn-close",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/tablet-mobile-header.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "absent",
+                "highlight" : [ ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "menu-wrapper" : {
+              "area" : [ 0, 0, 320, 57 ]
+            },
+            "logo" : {
+              "area" : [ 15, 23, 181, 42 ]
+            },
+            "search-button" : {
+              "area" : [ 242, 34, 26, 26 ]
+            },
+            "menu-btn" : {
+              "area" : [ 288, 32, 26, 26 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1453197730445,
+        "type" : "node"
+      } ],
+      "time" : 1453197724218,
+      "type" : "node"
+    } ]
+  }
+}

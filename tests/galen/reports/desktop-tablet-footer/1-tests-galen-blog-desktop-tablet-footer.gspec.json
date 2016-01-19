@@ -1,0 +1,264 @@
+{
+  "testId" : "1-tests-galen-blog-desktop-tablet-footer.gspec",
+  "name" : "tests/galen/blog/desktop-tablet-footer.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  tests/galen/blog/desktop-tablet-footer.gspec --url localhost:4000/blogs --size 1229x1024 --htmlreport tests/galen/reports/desktop-tablet-footer -Dwebdriver.chrome.driver=C:\\Users\\Pavlo_Oliynyk\\AppData\\Roaming\\npm\\node_modules\\galenframework-cli\\node_modules\\chromedriver\\bin\\chromedriver",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: tests/galen/blog/desktop-tablet-footer.gspec included tags: ",
+          "status" : "info",
+          "time" : 1452594135485,
+          "sections" : [ {
+            "name" : "Blogs page footer consist of six columns with blue titles",
+            "objects" : [ {
+              "name" : "global",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "count any nav-blocks-footer-* is 6",
+                "highlight" : [ "nav-blocks-footer-6", "nav-blocks-footer-5", "nav-blocks-footer-4", "nav-blocks-footer-3", "nav-blocks-footer-2", "nav-blocks-footer-1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "count any nav-item-heading-footer-* is 6",
+                "highlight" : [ "nav-item-heading-footer-1", "nav-item-heading-footer-2", "nav-item-heading-footer-5", "nav-item-heading-footer-6", "nav-item-heading-footer-3", "nav-item-heading-footer-4" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Blogs page footer at the bottom of the page",
+            "objects" : [ {
+              "name" : "footer",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "below top-content ~0 px",
+                "highlight" : [ "footer", "top-content" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Navigation test @desktop",
+            "objects" : [ {
+              "name" : "nav-item-heading-footer-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "text is \"Products & Docs\"",
+                "highlight" : [ "nav-item-heading-footer-1" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "aligned horizontally all nav-item-heading-footer-2",
+                "highlight" : [ "nav-item-heading-footer-1", "nav-item-heading-footer-2" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-1" ]
+              } ]
+            }, {
+              "name" : "nav-item-heading-footer-2",
+              "specs" : [ {
+                "status" : "warn",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "text is \"Partners warning\"",
+                "errors" : [ "\"nav-item-heading-footer-2\" text is \"Partners\" but should be \"Partners warning\"" ],
+                "highlight" : [ "nav-item-heading-footer-2" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 35
+                },
+                "name" : "aligned horizontally all nav-item-heading-footer-3",
+                "highlight" : [ "nav-item-heading-footer-2", "nav-item-heading-footer-3" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-2" ]
+              } ]
+            }, {
+              "name" : "nav-item-heading-footer-3",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 37
+                },
+                "name" : "text is \"Support\"",
+                "highlight" : [ "nav-item-heading-footer-3" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 38
+                },
+                "name" : "aligned horizontally all nav-item-heading-footer-4",
+                "highlight" : [ "nav-item-heading-footer-3", "nav-item-heading-footer-4" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-3" ]
+              } ]
+            }, {
+              "name" : "nav-item-heading-footer-4",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 40
+                },
+                "name" : "text is \"Blogs\"",
+                "highlight" : [ "nav-item-heading-footer-4" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "aligned horizontally all nav-item-heading-footer-5",
+                "highlight" : [ "nav-item-heading-footer-4", "nav-item-heading-footer-5" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-4" ]
+              } ]
+            }, {
+              "name" : "nav-item-heading-footer-5",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 43
+                },
+                "name" : "text is \"Events\"",
+                "highlight" : [ "nav-item-heading-footer-5" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 44
+                },
+                "name" : "aligned horizontally all nav-item-heading-footer-6",
+                "highlight" : [ "nav-item-heading-footer-5", "nav-item-heading-footer-6" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-5" ]
+              } ]
+            }, {
+              "name" : "nav-item-heading-footer-6",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 46
+                },
+                "name" : "text is \"Open Source\"",
+                "highlight" : [ "nav-item-heading-footer-6" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "tests/galen/blog/desktop-tablet-footer.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "css color is \"rgba(0, 156, 222, 1)\"",
+                "highlight" : [ "nav-item-heading-footer-6" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "nav-blocks-footer-6" : {
+              "area" : [ 990, 1053, 195, 176 ]
+            },
+            "nav-blocks-footer-5" : {
+              "area" : [ 795, 1053, 195, 128 ]
+            },
+            "footer" : {
+              "area" : [ 0, 1000, 1200, 333 ]
+            },
+            "top-content" : {
+              "area" : [ 0, 0, 1200, 1000 ]
+            },
+            "nav-item-heading-footer-1" : {
+              "area" : [ 30, 1068, 165, 24 ]
+            },
+            "nav-item-heading-footer-2" : {
+              "area" : [ 225, 1068, 165, 24 ]
+            },
+            "nav-blocks-footer-4" : {
+              "area" : [ 600, 1053, 195, 152 ]
+            },
+            "nav-item-heading-footer-5" : {
+              "area" : [ 810, 1068, 165, 24 ]
+            },
+            "nav-blocks-footer-3" : {
+              "area" : [ 405, 1053, 195, 176 ]
+            },
+            "nav-item-heading-footer-6" : {
+              "area" : [ 1005, 1068, 165, 24 ]
+            },
+            "nav-blocks-footer-2" : {
+              "area" : [ 210, 1053, 195, 176 ]
+            },
+            "nav-item-heading-footer-3" : {
+              "area" : [ 420, 1068, 165, 24 ]
+            },
+            "nav-blocks-footer-1" : {
+              "area" : [ 15, 1053, 195, 152 ]
+            },
+            "nav-item-heading-footer-4" : {
+              "area" : [ 615, 1068, 165, 24 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1452594133677,
+        "type" : "node"
+      } ],
+      "time" : 1452594126309,
+      "type" : "node"
+    } ]
+  }
+}
