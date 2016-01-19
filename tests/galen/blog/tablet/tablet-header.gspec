@@ -16,7 +16,7 @@
         logo:
             visible
             width > 10 % of screen/width
-            inside partly menu-wrapper ~23 px left, 20 to 30px top
+            inside partly menu-wrapper ~15 px left, 20 to 30px top
 
         search-button:
             visible
