@@ -33,8 +33,8 @@ before_script:
 script:
 #  - ./node_modules/karma/bin/karma start karma.conf.js
 #  - htmlproof ./_site --verbose --href-ignore "#" --disable-external --file-ignore './_site/node_modules/*'
-  - jekyll serve &
-  - sleep 3 # give jekyll some time to start
+#  - jekyll serve &
+#  - sleep 3 # give jekyll some time to start
   - galen test tests/galen/all.test --htmlreport tests/galen/reports/all
 
 after_script:
