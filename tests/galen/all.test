@@ -39,7 +39,7 @@ Prod-and-Docs page on mobile
         check ${prDocs}/mobile-getting-started.gspec --include "mobile" --exclude "nomobile"
 
 ######
-
+@@ disabled
 Blogs page on mobile
     ${base_url}/blogs/ ${mobile_size}
         check ${blog}/mobile-footer.gspec --include "mobile" --exclude "nomobile"
@@ -51,12 +51,10 @@ Blogs page on mobile
 Blogs page on tablet
     ${base_url}/blogs/ ${tablet_size}
         check ${blog}/tablet-content.gspec --include "tablet"
-        check ${blog}/tablet-mobile-header.gspec --include "tablet, mobile"
-        check ${blog}/tablet-mobile-header-menu.gspec --include "tablet, mobile"
+        check ${blog}/tablet-header.gspec --include "tablet, mobile"
+        check ${blog}/tablet-header-menu.gspec --include "tablet, mobile"
 
-@@ disabled
+
 Blogs page on desktop
     ${base_url}/blogs/ ${desktop_size}
-        check ${blog}/desktop-content.gspec --include "desktop"
-        check ${blog}/desktop-header.gspec --include "desktop"
-        check ${blog}/desktop-tablet-footer.gspec --include "desktop"
+        check ${blog}/desktop-blog.gspec --include "desktop"

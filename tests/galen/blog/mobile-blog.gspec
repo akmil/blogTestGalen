@@ -1,0 +1,5 @@
+@import desktop/mobile-content.gspec
+@import desktop/mobile-footer.gspec
+@import desktop/mobile-header.gspec
+@import desktop/mobile-header-menu.gspec
+# keyword @import - not saw in local run test on Windows (becouse of '/' in path)
