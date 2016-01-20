@@ -25,7 +25,7 @@
     @on tablet
         global:
             count any table-dataset-th-* is 2
-            count any table-dataset-tr-* is 6
+            % count any table-dataset-tr-* is 11
 
     @on tablet
             table-dataset-th-1:
