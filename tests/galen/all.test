@@ -65,4 +65,4 @@ Blogs page on mobile
 
 
 Menu top on mobile
-    galen test ${blog}/menu/header-menu-mobile.js
+    test ${blog}/menu/header-menu-mobile.js
