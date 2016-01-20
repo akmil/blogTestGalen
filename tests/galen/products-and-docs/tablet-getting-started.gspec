@@ -29,19 +29,19 @@
 
     @on tablet
             table-dataset-th-1:
-                text is "Dataset"
+                % text is "Dataset"
                 aligned horizontally all table-dataset-th-2
             table-dataset-th-2:
-                text is "Description"
+                % text is "Description"
             table-api-th-01:
-                text uppercase starts "API"
+                % text uppercase starts "API"
 
             table-1:
                 contains table-dataset
                 width 722 to 768px
 
             table-2:
-                contains table-api
+                % contains table-api
                 width 722 to 768px
 
             table-dataset:
@@ -93,11 +93,8 @@
             css padding-right is "0px"
             css padding-top   is "0px"
 
-        p-body:
+        p-body, p-simple-01:
             css font-family contains "TMSans-Regular"
-
-        p-simple-01:
-            css font-family contains "TMSans-Light"
 
         h2:
             ${lineHeight} "48px"
