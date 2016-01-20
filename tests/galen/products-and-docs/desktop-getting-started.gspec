@@ -27,7 +27,7 @@
         global:
             #count any table-*            is 2
             count any table-dataset-th-* is 2
-            count any table-dataset-tr-* is > 11
+            count any table-dataset-tr-* is > 10
 
     @on desktop
             table-dataset-th-1:
@@ -41,7 +41,7 @@
             table-1:
                 contains table-dataset
             table-2:
-                contains table-api
+                % contains table-api
 
             table-dataset:
                 visible
