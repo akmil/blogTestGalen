@@ -1,6 +1,6 @@
 @@ set
     #domain      127.0.0.1:4000
-    domain      http://ticketmaster-api-staging.github.io/
+    domain      ticketmaster-api-staging.github.io
     base_url    http://${domain}/
 
     mobile_size     320x480
@@ -30,7 +30,6 @@ Home page on mobile
 
 ##############################################################################
 
-@@ disabled
 Prod-and-Docs page on desktop
     ${base_url}/products-and-docs/apis/getting-started/ 1200x1080
         check ${prDocs}/desktop-getting-started.gspec --include "desktop"
@@ -60,10 +59,4 @@ Blogs page on tablet
 @@ disabled
 Blogs page on mobile
     ${base_url}/blogs/ ${mobile_size}
-        inject ${blog}/menu/header-menu-mobile.js
         check  ${blog}/mobile-blog.gspec --include "mobile" --exclude "nomobile"
-
-@@ disabled
-Menu top on mobile
-    http://ticketmaster-api-staging.github.io/blogs/
-        test ${blog}/menu/header-menu-mobile.js
