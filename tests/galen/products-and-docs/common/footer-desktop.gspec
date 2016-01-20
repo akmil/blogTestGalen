@@ -22,7 +22,7 @@
         global:
             count any nav-blocks-footer-* is 6
             count any nav-item-heading-footer-* is 6
-            count any nav-all-item-footer-* is 19
+            count any nav-all-item-footer-* is > 19
 
     @on desktop
         nav-item-heading-footer-1:
@@ -74,7 +74,7 @@
             % text is "Forums"
             aligned vertically left nav-item-block-3-footer-3
         nav-item-block-3-footer-3:
-            % text is "Terms of Use"
+            % text is "General Terms of Use"
             aligned vertically left nav-item-block-3-footer-4
         nav-item-block-3-footer-4:
             % text is "Branding Guide"
