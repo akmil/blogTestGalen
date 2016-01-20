@@ -1,7 +1,10 @@
 test("Home page test on mobile device", function () {
-    var driver = createDriver("http://ticketmaster-api-staging.github.io/blogs",
-                              "320x800",
-                              "firefox");
+    var driver = createGridDriver("http://ticketmaster-api-staging.github.io/blogs", {
+        browser: "firefox",
+        browserVersion: "42",
+        platform: "LINUX",
+        size: "320x800"
+    });
 
     var Blogs = $page("Blogs", {
         title: "title",
