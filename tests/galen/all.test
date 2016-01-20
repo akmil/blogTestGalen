@@ -63,7 +63,7 @@ Blogs page on mobile
         inject ${blog}/menu/header-menu-mobile.js
         check  ${blog}/mobile-blog.gspec --include "mobile" --exclude "nomobile"
 
-
+@@ disabled
 Menu top on mobile
     http://ticketmaster-api-staging.github.io/blogs/
         test ${blog}/menu/header-menu-mobile.js
