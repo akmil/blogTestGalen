@@ -17,7 +17,7 @@
 
     nav-all-item-footer-*   css  #footer > div.row.footer-nav > div > div > ul > li > a
 
-= Navigation test @desktop =
+= Navigation test @desktop (footer-desktop.gspec)=
     @on desktop
         global:
             count any nav-blocks-footer-* is 6
