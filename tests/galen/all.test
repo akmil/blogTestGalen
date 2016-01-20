@@ -59,4 +59,4 @@ Blogs page on tablet
 Blogs page on mobile
     ${base_url}/blogs/ ${mobile_size}
         check ${blog}/mobile-blog.gspec --include "mobile" --exclude "nomobile"
-        run tests/galen/blog/menu/header-menu-modile.test.js
+        run ./tests/galen/blog/menu/header-menu-modile.test.js

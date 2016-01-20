@@ -1,5 +1,5 @@
 test("Home page test on mobile device", function () {
-    var driver = createDriver("http://ticketmaster-api-staging.github.io/products-and-docs/apis/partner/",
+    var driver = createDriver("http://ticketmaster-api-staging.github.io/blogs",
                               "320x800",
                               "firefox");
 
