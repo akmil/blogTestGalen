@@ -45,15 +45,18 @@ Prod-and-Docs page on mobile
         check ${prDocs}/mobile-getting-started.gspec --include "mobile" --exclude "nomobile"
 
 ##############################################################################
-
+@@ disabled
 Blogs page on desktop
     ${base_url}/blogs/ ${desktop_size}
         check ${blog}/desktop-blog.gspec --include "desktop"
-
+@@ disabled
 Blogs page on tablet
     ${base_url}/blogs/ ${tablet_size}
-        check ${blog}/tablet-blog.gspec --include "tablet"
+        check ${blog}/tablet-blog.gspec
+        --include "tablet"
+        --htmlreport tests/galen/reports/blog/tablet-tests
 
 Blogs page on mobile
     ${base_url}/blogs/ ${mobile_size}
         check ${blog}/mobile-blog.gspec --include "mobile" --exclude "nomobile"
+        test tests/galen/blog/menu/header-menu-modile.test.js
