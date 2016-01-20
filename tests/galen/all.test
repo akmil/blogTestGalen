@@ -57,7 +57,12 @@ Blogs page on tablet
         --include "tablet"
         --htmlreport tests/galen/reports/blog/tablet-tests
 
+@@ disabled
 Blogs page on mobile
     ${base_url}/blogs/ ${mobile_size}
         inject ${blog}/menu/header-menu-mobile.js
         check  ${blog}/mobile-blog.gspec --include "mobile" --exclude "nomobile"
+
+Menu top on mobile
+    ${base_url}/blogs/ ${mobile_size}
+        check ${blog}/menu/header-menu-mobile.js --include "mobile" --exclude "nomobile"
