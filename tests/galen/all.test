@@ -65,5 +65,5 @@ Blogs page on mobile
 
 
 Menu top on mobile
-    http://ticketmaster-api-staging.github.io/blogs/ 320x480
-        check ${blog}/menu/header-menu-mobile.js --include "mobile" --exclude "nomobile"
+    http://ticketmaster-api-staging.github.io/blogs/
+        test ${blog}/menu/header-menu-mobile.js
