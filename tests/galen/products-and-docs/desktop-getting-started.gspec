@@ -31,17 +31,17 @@
 
     @on desktop
             table-dataset-th-1:
-                text is "Dataset"
+                % text is "Dataset"
                 aligned horizontally all table-dataset-th-2
             table-dataset-th-2:
-                text is "Description"
+                % text is "Description"
             table-api-th-01:
-                text uppercase starts "API"
+                % text uppercase starts "API"
 
             table-1:
                 contains table-dataset
             table-2:
-                contains table-api
+                % contains table-api
 
             table-dataset:
                 visible
@@ -106,7 +106,7 @@
 
 = text check =
         table-api-h4:
-            text is "Discovery API"
+            % text is "Discovery API"
 
 = color check =
         header-main, header-h2-introduction, h2, table-api-h4:
