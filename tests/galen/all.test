@@ -65,4 +65,5 @@ Blogs page on mobile
 
 
 Menu top on mobile
-    test ${blog}/menu/header-menu-mobile.js
+    http://ticketmaster-api-staging.github.io/blogs/
+        test ${blog}/menu/header-menu-mobile.js
