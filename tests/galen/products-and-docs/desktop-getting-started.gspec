@@ -93,11 +93,8 @@
             css padding-right is "0px"
             css padding-top   is "0px"
 
-        p-body:
+        p-body, p-simple-01:
             css font-family contains "TMSans-Regular"
-
-        p-simple-01:
-            css font-family contains "TMSans-Light"
 
         h2:
             ${lineHeight} "48px"
