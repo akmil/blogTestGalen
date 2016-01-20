@@ -44,4 +44,18 @@ test("Home page test on mobile device", function () {
 
 /*
 galen test tests/galen/blog/menu/header-menu-modile.test.js --htmlreport tests/galen/reports/jsClick
+
+ ${base_url}/blogs/ ${mobile_size}
+
+ galen
+ check tests/galen/blog/mobile/mobile-header.gspec
+     --url http://ticketmaster-api-staging.github.io/blogs
+     --size 797x1080
+     --include "mobile"
+     --javascript "tests/galen/blog/menu/header-menu-modile.test.js"
+
+ galen test
+ tests/galen/blog/mobile/mobile-header.gspec
+ tests/galen/blog/menu/header-menu-modile.test.js
+
  */
