@@ -37,6 +37,7 @@ script:
 #  - jekyll serve &
 #  - sleep 3 # give jekyll some time to start
   - galen test tests/galen/all.test --htmlreport tests/galen/reports/all
+  - galen test tests/galen/blog/menu/header-menu-mobile.js --htmlreport tests/galen/reports/menu
 
 after_script:
   - rake travis:deploy --trace --verbose
