@@ -1,6 +1,6 @@
 @import common/vars.gspec
-#@import common/tablet-header.gspec
-#@import common/tablet-sb-menu.gspec
+@import common/tablet-header.gspec
+@import common/tablet-sb-menu.gspec
 @import common/footer-tablet.gspec
 
 @objects
@@ -20,8 +20,9 @@
     table-api-h4                css     #main-block > div > div.table-wrapper > table > tbody > tr:nth-child(1) > td:nth-child(1) > h4
     table-api-th-01             xpath    //*[@id="main-block"]/div/div[1]/table/thead/tr[1]/th[1]
     table-api-tr                css     #main-block > div > div.table-wrapper > table > thead > tr:nth-child(1)
-
-=count and text test @tablet=
+=====
+=count and text test @tablet (footer-tablet.gspec)=
+=====
     @on tablet
         global:
             count any table-dataset-th-* is 2

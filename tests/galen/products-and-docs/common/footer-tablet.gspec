@@ -1,7 +1,7 @@
 @objects
     footer-container            css  #footer
     nav-blocks-footer-*         css  #footer > div.row.footer-nav > div > div
-    nav-item-heading-footer-*   css  #footer > div.row.footer-nav > div > div > h5
+    nav-item-heading-footer-*   css  #footer > div.row.footer-nav > div > div > a > h4
 
     nav-item-block-1-footer-*   css  #footer > div.row.footer-nav > div > div:nth-child(1) > ul > li > a
     nav-item-block-2-footer-*   css  #footer > div.row.footer-nav > div > div:nth-child(2) > ul > li > a
@@ -15,8 +15,7 @@
     logo-bottom-img             css  #footer > div.row.bottom-logo > div > div > a > img
     logo-bottom-text            css  #footer > div.row.bottom-logo > div > div > a > span
 
-= Navigation test footer @tablet =
-   @on tablet
+= Navigation test footer @tablet (footer-tablet.gspec)=
         nav-item-heading-footer-*:
             width ~ 13% of screen/width
 
@@ -34,7 +33,7 @@
             aligned horizontally all nav-item-heading-footer-5
         nav-item-heading-footer-5:
             % text is "Events"
-            aligned horizontally all nav-item-heading-footer-6
+             #aligned horizontally all nav-item-heading-footer-6
         nav-item-heading-footer-6:
             % text is "Open Source"
 
@@ -69,17 +68,17 @@
             % text is "Forums"
             aligned vertically left nav-item-block-3-footer-3
         nav-item-block-3-footer-3:
-            % text is "Terms of Use"
+            % text is "General Terms of Use"
             aligned vertically left nav-item-block-3-footer-4
         nav-item-block-3-footer-4:
-            % text is "Branding Guide"
+            % text is "Partner API Terms of Use"
 
 = block-4 (Blogs) text, align check @tablet=
         nav-item-block-4-footer-1:
-            % text is "Ticketmaster Tech"
+            % text is "Tech Blog"
             aligned vertically left nav-item-block-4-footer-2
         nav-item-block-4-footer-2:
-            % text is "Ticketmaster Medium Publication"
+            % text is "Medium Publication"
 
 = block-5 (Events) text, align check @tablet=
         nav-item-block-5-footer-1:
@@ -103,7 +102,7 @@
 
 = colors, height @tablet=
         footer-container:
-            height  435 to 445 px
+            height  450 to 475 px
             # css background-image is "url(/assets/img/footer/bg-die-antwoord-p-1.png)";
 
         nav-all-item-footer-*:
@@ -113,14 +112,14 @@
             ${color} "rgba(255, 255, 255, 1)"
 
         logo-bottom-img:
-            aligned horizontally centered logo-bottom-text 1px
+            aligned horizontally top logo-bottom-text ~1px
 
 
-    @on tablet
+#    @on tablet
         global:
             count any nav-blocks-footer-* is 6
             count any nav-item-heading-footer-* is 6
-            count any nav-all-item-footer-* is 19
+            % count any nav-all-item-footer-* is 20
 
 
 
@@ -128,3 +127,5 @@
 ### run me local (FF). In prod version should be --size 768x1080
 ## in local 768x1080 run as 797x1080
 ### galen check tests/galen/products-and-docs/common/footer-tablet.gspec --url 127.0.0.1:4000/products-and-docs/apis/getting-started/ --size 797x1080 --htmlreport tests/galen/reports/footerTablet
+#
+### galen check tests/galen/products-and-docs/common/footer-tablet.gspec --url http://ticketmaster-api-staging.github.io/products-and-docs/apis/getting-started/ --size 797x1080 --htmlreport tests/galen/reports/footerTablet
