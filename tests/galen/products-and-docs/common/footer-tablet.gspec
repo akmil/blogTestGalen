@@ -16,7 +16,6 @@
     logo-bottom-text            css  #footer > div.row.bottom-logo > div > div > a > span
 
 = Navigation test footer @tablet =
-   @on tablet
         nav-item-heading-footer-*:
             width ~ 13% of screen/width
 
