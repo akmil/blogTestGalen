@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "4.1"
-sudo: required
+# sudo: required
 
 before_install:
   - rvm install 2.1.5
