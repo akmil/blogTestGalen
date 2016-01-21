@@ -39,9 +39,9 @@
         columns-block:
             below top-promo 40 to 50px
         footer:
-            below columns-block ~0px
+            below columns-block ~43px
         main-desc:
-            below main-header 25 to 35px
+            below main-header 20 to 40px
         get-api-btn:
             width 195 to 200px
             height 45 to 50px
