@@ -6,7 +6,7 @@
 @objects
     footer-container            css  #footer
     nav-blocks-footer-*         css  #footer > div.row.footer-nav > div > div
-    nav-item-heading-footer-*   css  #footer > div.row.footer-nav > div > div > a > h5
+    nav-item-heading-footer-*   css  #footer > div.row.footer-nav > div > div > a > h4
 
     nav-item-block-1-footer-*   css  #footer > div.row.footer-nav > div > div:nth-child(1) > ul > li > a
     nav-item-block-2-footer-*   css  #footer > div.row.footer-nav > div > div:nth-child(2) > ul > li > a
@@ -25,7 +25,7 @@
         global:
             count any nav-blocks-footer-* is 6
             count any nav-item-heading-footer-* is 6
-            % count any nav-all-item-footer-* is 19
+            % count any nav-all-item-footer-* is 20
 
 
     @on mobile
