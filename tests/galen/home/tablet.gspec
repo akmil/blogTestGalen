@@ -5,7 +5,7 @@
     nav-item-*  css  #menu a
 
     social      id   promo-social
-    twitter     css  .twitter-tweet
+    twitter     css  #timeline
 
     top-promo   id   top-promo
     main-header css  #top-promo h1
@@ -61,4 +61,4 @@
 
 = twitter card =
         twitter:
-            absent
+            visible
