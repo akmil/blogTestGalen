@@ -26,12 +26,10 @@
      ### image file img/scr-home768.png, tolerance 4000, map-filter denoise 10
 
 = Navigation test =
-#    @on mobile
         logo:
             visible
 
 = general layout test =
-#    @on mobile
         body:
             width ~99% of screen/width
         column-item-*:
@@ -47,7 +45,7 @@
         main-desc:
             below main-header 30 to 40px
         get-api-btn:
-            above explore-btn 55 to 65px
+            above explore-btn 45 to 55px
             width 195 to 200px
             height 45 to 50px
         explore-btn:
@@ -56,6 +54,5 @@
             visible
 
 = twitter card =
-#    @on mobile
         twitter:
-            inside social
+            absent
