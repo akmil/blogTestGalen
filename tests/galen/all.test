@@ -12,12 +12,12 @@
     blog        tests/galen/blog
 
 ##############################################################################
-
+@@ disabled
 Home page on desktop
     http://${domain} ${desktop_size}
         check ${home}/desktop.gspec --include "desktop"
 
-@@ disabled
+
 Home page on tablet
     http://${domain} ${tablet_size}
         check ${home}/tablet.gspec --include "tablet,all" --exclude "nomobile"

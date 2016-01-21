@@ -26,12 +26,12 @@
      ### image file img/scr-home768.png, tolerance 4000, map-filter denoise 10
 
 = Navigation test =
-    @on mobile
+#    @on mobile
         logo:
             visible
 
 = general layout test =
-    @on mobile
+#    @on mobile
         column-item-*:
             width 90 to 95% of columns-container/width
         columns-block:
@@ -54,6 +54,6 @@
             visible
 
 = twitter card =
-    @on mobile
+#    @on mobile
         twitter:
             inside social
