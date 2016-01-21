@@ -120,7 +120,7 @@
         global:
             count any nav-blocks-footer-* is 6
             count any nav-item-heading-footer-* is 6
-            count any nav-all-item-footer-* is 19
+            % count any nav-all-item-footer-* is 20
 
 
 
