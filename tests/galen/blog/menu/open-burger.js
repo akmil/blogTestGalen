@@ -1,11 +1,11 @@
 /**
  * Created by Pavlo_Oliinyk1 on 1/21/2016.
  */
-var delay = 1000;
+
 setTimeout(function(){
     console.log('delay', delay);
     $("#menu-btn").click();
-}, delay);
+}, 500);
 
 /*
 galen check ./tests/galen/blog/menu/empty.gspec
