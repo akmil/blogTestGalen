@@ -1,7 +1,9 @@
 /**
  * Created by Pavlo_Oliinyk1 on 1/21/2016.
  */
-$("#menu-btn").click();
+setTimeout(function(){
+    $("#menu-btn").click();
+}, 1000);
 
 /*
 galen check ./tests/galen/blog/menu/empty.gspec
