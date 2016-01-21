@@ -11,7 +11,8 @@
     main-header css  #top-promo h1
     main-desc   css  #top-promo p
     get-api-btn css  #top-promo .tm-btn-white
-    explore-btn css  #top-promo .tm-btn-transparent
+    review-doc-btn css  #top-promo > div > div.row-container > div.col-xs-12.button-block > a:nth-child(2)
+    explore-btn css  #top-promo > div > div.row-container > div.col-xs-12.button-block > a:nth-child(3)
 
     columns-block       css .columns
     columns-container   css .columns .row-container
@@ -45,9 +46,14 @@
         main-desc:
             below main-header 30 to 40px
         get-api-btn:
+            above review-doc-btn 45 to 55px
+            width 345 to 350px
+            height 45 to 50px
+        review-doc-btn:
             above explore-btn 45 to 55px
             width 345 to 350px
             height 45 to 50px
+            visible
         explore-btn:
             width 345 to 350px
             height 45 to 50px
