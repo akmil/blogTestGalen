@@ -35,6 +35,7 @@ function waitFor(func) {
 
 $("#menu-btn").trigger('click');
 
+
 /*
 galen test tests/galen/blog/menu/header-menu-mobile.js --htmlreport tests/galen/reports/jsClick
 
