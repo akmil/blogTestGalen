@@ -16,9 +16,7 @@
     scrollable-element              css     #scrollable-element
     side-menu-btn                   css     #side-menu-btn
 
-=====
-= count and text sb-menu @tablet(tablet-sb-menu.gspec)=
-=====
+=count and text sb-menu @tablet(tablet-sb-menu.gspec)=
     @on tablet
         global:
             count any aside-menu-block-* is 3
