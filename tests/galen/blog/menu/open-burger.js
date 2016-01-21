@@ -1,11 +1,5 @@
-/**
- * Created by Pavlo_Oliinyk1 on 1/21/2016.
- */
 
-setTimeout(function(){
-    console.log('delay', delay);
-    $("#menu-btn").click();
-}, 500);
+$("#menu-btn").trigger('click');
 
 /*
 galen check ./tests/galen/blog/menu/empty.gspec
