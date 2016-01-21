@@ -50,8 +50,13 @@ Blogs page on desktop
 Blogs page on tablet
     ${base_url}/blogs/ ${tablet_size}
         check ${blog}/tablet-blog.gspec
-
+@@ disabled
 Blogs page on mobile
     ${base_url}/blogs/ ${mobile_size}
         inject ./tests/galen/blog/menu/open-burger.js
         check  ${blog}/mobile-blog.gspec --include "mobile" --exclude "nomobile"
+
+Blogs page on mobile
+    ${base_url}/blogs/ ${mobile_size}
+        inject ./tests/galen/blog/menu/open-burger.js
+        check  ${blog}/menu/mobile-header-menu-open.gspec --include "mobile" --exclude "nomobile"
