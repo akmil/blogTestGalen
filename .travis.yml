@@ -1,11 +1,13 @@
 language: node_js
 node_js:
   - "4.1"
+sudo: required
 
 before_install:
   - rvm install 2.1.5
 #  - npm install
   - npm install -g galenframework-cli
+#  - sudo apt-get install w3m w3m-img
 #  - gem install jekyll
 # - jekyll serve &
 
@@ -37,6 +39,7 @@ script:
 #  - jekyll serve &
 #  - sleep 3 # give jekyll some time to start
   - galen test tests/galen/all.test --htmlreport tests/galen/reports/all
+  - tests/galen/reports/all
 #  - galen test ./tests/galen/blog/menu/header-menu-mobile.js --htmlreport tests/galen/reports/menu
 
 after_script:

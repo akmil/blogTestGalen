@@ -1,7 +1,5 @@
-/**
- * Created by Pavlo_Oliinyk1 on 1/21/2016.
- */
-$("#menu-btn").click();
+
+$("#menu-btn").trigger('click');
 
 /*
 galen check ./tests/galen/blog/menu/empty.gspec

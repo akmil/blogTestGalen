@@ -56,7 +56,7 @@ Blogs page on mobile
         inject ./tests/galen/blog/menu/open-burger.js
         check  ${blog}/mobile-blog.gspec --include "mobile" --exclude "nomobile"
 
-Blogs page on mobile
+Blogs page on mobile open-menu
     ${base_url}/blogs/ ${mobile_size}
         inject ./tests/galen/blog/menu/open-burger.js
         check  ${blog}/menu/mobile-header-menu-open.gspec --include "mobile" --exclude "nomobile"
