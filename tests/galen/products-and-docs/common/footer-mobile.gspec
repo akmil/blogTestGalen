@@ -115,7 +115,7 @@
 
 = colors, height =
         footer-container:
-            height  884 to 890 px
+            height  892 to 902 px
             # css background-image is "url(/assets/img/footer/bg-die-antwoord-p-1.png)";
 
         nav-all-item-footer-*:
