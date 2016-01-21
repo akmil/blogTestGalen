@@ -46,7 +46,7 @@
             width 195 to 200px
             height 45 to 50px
 
-        partners-block, social, explore-btn:
+        partners-block, social:
             absent
         review-doc-btn, explore-btn:
             absent
