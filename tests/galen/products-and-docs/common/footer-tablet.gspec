@@ -115,7 +115,7 @@
             aligned horizontally centered logo-bottom-text 1px
 
 
-    @on tablet
+#    @on tablet
         global:
             count any nav-blocks-footer-* is 6
             count any nav-item-heading-footer-* is 6
