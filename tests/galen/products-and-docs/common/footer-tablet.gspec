@@ -1,7 +1,7 @@
 @objects
     footer-container            css  #footer
     nav-blocks-footer-*         css  #footer > div.row.footer-nav > div > div
-    nav-item-heading-footer-*   css  #footer > div.row.footer-nav > div > div > h4
+    nav-item-heading-footer-*   css  #footer > div.row.footer-nav > div > div > a > h4
 
     nav-item-block-1-footer-*   css  #footer > div.row.footer-nav > div > div:nth-child(1) > ul > li > a
     nav-item-block-2-footer-*   css  #footer > div.row.footer-nav > div > div:nth-child(2) > ul > li > a
@@ -15,7 +15,7 @@
     logo-bottom-img             css  #footer > div.row.bottom-logo > div > div > a > img
     logo-bottom-text            css  #footer > div.row.bottom-logo > div > div > a > span
 
-= Navigation test footer @tablet =
+= Navigation test footer @tablet (footer-tablet.gspec)=
         nav-item-heading-footer-*:
             width ~ 13% of screen/width
 
