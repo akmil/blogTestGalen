@@ -13,9 +13,9 @@
     get-api-btn css  #top-promo .tm-btn-white
     explore-btn css  #top-promo .tm-btn-transparent
 
-    columns-block css .columns
-    columns-container css .columns .row-container
-    column-item-* css .columns .row-container>div
+    columns-block       css .columns
+    columns-container   css .columns .row-container
+    column-item-*       css .columns .row-container>div
 
     partners-block id bottom-promo
 
@@ -33,7 +33,7 @@
 = general layout test =
 #    @on mobile
         column-item-*:
-            width 90 to 95% of columns-container/width
+            width 90 to 95% of screen/width
         columns-block:
             below top-promo 25 to 35px
         partners-block:
