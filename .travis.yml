@@ -38,9 +38,9 @@ script:
 #  - htmlproof ./_site --verbose --href-ignore "#" --disable-external --file-ignore './_site/node_modules/*'
 #  - jekyll serve &
 #  - sleep 3 # give jekyll some time to start
-  - galen test tests/galen/all.test --htmlreport tests/galen/reports/all
-  - galen test ./tests/galen/blog/menu/header-menu-mobile.js --htmlreport tests/galen/reports/behavior
+ # - galen test tests/galen/all.test --htmlreport tests/galen/reports/all
+#  - galen test ./tests/galen/blog/menu/header-menu-mobile.js --htmlreport tests/galen/reports/behavior
 
 after_script:
-  - tests\galen\reports\all\report.html
+#  - tests\galen\reports\all\report.html
   - rake travis:deploy --trace --verbose
