@@ -7,7 +7,7 @@ before_install:
   - rvm install 2.1.5
 #  - npm install
   - npm install -g galenframework-cli
-  - sudo apt-get install w3m w3m-img
+#  - sudo apt-get install w3m w3m-img
 #  - gem install jekyll
 # - jekyll serve &
 
@@ -37,8 +37,8 @@ script:
 #  - ./node_modules/karma/bin/karma start karma.conf.js
 #  - htmlproof ./_site --verbose --href-ignore "#" --disable-external --file-ignore './_site/node_modules/*'
 #  - jekyll serve &
-#  - sleep 3 # give jekyll some time to start
- # - galen test tests/galen/all.test --htmlreport tests/galen/reports/all
+  - sleep 1 # give jekyll some time to start
+# - galen test tests/galen/all.test --htmlreport tests/galen/reports/all
 #  - galen test ./tests/galen/blog/menu/header-menu-mobile.js --htmlreport tests/galen/reports/behavior
 
 after_script:
