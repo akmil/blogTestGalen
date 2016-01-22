@@ -42,5 +42,5 @@ script:
 #  - galen test ./tests/galen/blog/menu/header-menu-mobile.js --htmlreport tests/galen/reports/behavior
 
 after_script:
-#  - file://tests/galen/reports/all/report.html
+# - file://tests/galen/reports/all/report.html
   - rake travis:deploy --trace --verbose
