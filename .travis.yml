@@ -42,6 +42,5 @@ script:
 #  - galen test ./tests/galen/blog/menu/header-menu-mobile.js --htmlreport tests/galen/reports/behavior
 
 after_script:
-#  - less tests/galen/reports/all/report.json --javascript "showWarn.js"
-  - galen test tests/galen/showWarn.js
+  - less tests/galen/reports/all/report.json &
   - rake travis:deploy --trace --verbose
