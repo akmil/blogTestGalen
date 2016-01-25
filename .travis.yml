@@ -8,6 +8,8 @@ before_install:
 #  - npm install
   - npm install -g galenframework-cli
   - sudo apt-get install html2text
+  - sudo aptitude install w3m
+  - sudo apt-get install w3m
 #  - gem install jekyll
 # - jekyll serve &
 
