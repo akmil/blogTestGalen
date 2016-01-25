@@ -53,6 +53,24 @@ test("Home page test on mobile device", function () {
 
 });
 
+test("Dump test", function(){
+    var driver = createDriver("http://ticketmaster-api-staging.github.io/apis/commerce/",
+        "1440x800",
+        "firefox"
+    );
+    dumpPage({
+        driver: driver,
+        name: "pd page Dump",
+        spec: "tests/galen/home/homeDumpContent.gspec",
+        exportPath: "tests/galen/reports/allDump",
+        maxWidth: 2200,
+        maxHeight: 2400,
+        onlyImages: true,
+        excludedObjects: ["header", "footer"]
+    });
+
+});
+
 
 
 /*
