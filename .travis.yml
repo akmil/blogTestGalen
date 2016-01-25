@@ -22,7 +22,6 @@ notifications:
 # whitelist
 branches:
   only:
-    - master
     - gh-pages
 
 
@@ -38,10 +37,11 @@ script:
 #  - htmlproof ./_site --verbose --href-ignore "#" --disable-external --file-ignore './_site/node_modules/*'
 #  - jekyll serve &
    - sleep 1 # give jekyll some time to start
-   - galen test tests/galen/all.test --htmlreport tests/galen/reports/all --jsonreport tests/galen/reports/all/jsonreportDir
+   - galen test tests/galen/all.test --htmlreport tests/galen/reports/all
 #  - galen test ./tests/galen/blog/menu/header-menu-mobile.js --htmlreport tests/galen/reports/behavior
 
 after_script:
-  - file://tests/galen/reports/all/report.json
-  - head tests/galen/reports/all/report.json
+  - cat tests/galen/reports/all/report.json
+  - less tests/galen/reports/all/report.json
+  - vim tests/galen/reports/all/report.json
   - rake travis:deploy --trace --verbose
