@@ -8,7 +8,7 @@ before_install:
 #  - npm install
   - npm install -g galenframework-cli
   - sudo apt-get install html2text
-  - sudo aptitude install w3m
+#  - sudo aptitude install w3m
   - sudo apt-get install w3m
 #  - gem install jekyll
 # - jekyll serve &
@@ -44,6 +44,7 @@ script:
 #  - galen test ./tests/galen/blog/menu/header-menu-mobile.js --htmlreport tests/galen/reports/behavior
 
 after_script:
+  - w3m -dump tests/galen/reports/all/report.html | less
 #  - less tests/galen/reports/all/report.html & sleep 1
-  - less tests/galen/reports/all/report.json & sleep 1
+#  - less tests/galen/reports/all/report.json & sleep 1
   - rake travis:deploy --trace --verbose
