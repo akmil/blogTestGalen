@@ -69,6 +69,7 @@ Home pageDump test
         dump ${home}/homeDumpContent.gspec --name "Home page desktop" --export tests/galen/home/dumpsDesktop/
         check ${home}/desktop.gspec --include "desktop"
 
+
 ## create images by --export tests/galen/home/dumpsDesktop/ then compare it
 ## actual size: 1440x3522   (89px difference)
 ## 1440x3611
