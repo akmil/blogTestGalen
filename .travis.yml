@@ -42,5 +42,6 @@ script:
 
 after_script:
 #  - less tests/galen/reports/all/report.json --javascript "showWarn.js"
+
   - galen test tests/galen/showWarn.js
   - rake travis:deploy --trace --verbose
