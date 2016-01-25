@@ -22,6 +22,7 @@ notifications:
 # whitelist
 branches:
   only:
+    - master
     - gh-pages
 
 
