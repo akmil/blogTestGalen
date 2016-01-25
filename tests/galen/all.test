@@ -63,7 +63,7 @@ Blogs page on mobile open-menu
 
 
 #################
-Home pageDump test
+Home page Dump Images test on desktop
     ${base_url} 1440x3611
         wait 1m until visible "id: qual_ol"
         dump ${home}/homeDumpContent.gspec --name "Home page desktop" --export tests/galen/home/dumpsDesktop/
