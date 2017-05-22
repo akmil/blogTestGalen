@@ -1,8 +1,8 @@
-/tests/galen/reports
-/node_modules
+_site
 .sass-cache
 .jekyll-metadata
+/_site/
+/.sass-cache/
+/node_modules/
 .idea
-/_site
-
-/.sass-cache
+/.idea/

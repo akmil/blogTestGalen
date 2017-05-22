@@ -17,8 +17,6 @@ def print_hi(name)
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
-
-Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap. Hashtag typewriter
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
@@ -28,7 +26,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-talk]: https://talk.jekyllrb.com/
 
 
-#### Table examples with class
+## Table examples with class
 {: .some-class}
 
 First Header | Second Header
@@ -43,56 +41,11 @@ Content insdfdsfdsf   | Content in the second column
 |      |     |      |      |            |
 |      |     |      |      |            |
 
-#### General
+## Table examples
 
-* [Umami tattooed sriracha meggings pickled Marfa Blue Bottle High Life next level four loko PBR?][jekyll-docs] 
-* [Hella narwhal Cosby?][jekyll-docs]
-* [Sweater McSweeney's, salvia kitsch before they sold out High Life?][jekyll-docs] 
-* [Umami tattooed sriracha meggings pickled Marfa Blue Bottle High Life next level four loko PBR?][jekyll-docs]
-
-#### Table2 
 
 | test | ttt | left | center | left |
 |------|-----|------:|:-----:|:------------|
 | Content in the second column      | Content in the second column    |Content in the second column      |  Center    |  Right          |
 | Content in the second column      | Content in the second column    | Content in the second column     |  Content in the second column    | Content in the second column           |
 | Content in the second column     | Content in the second column    |  Content in the second column    | Content in the second column     | Content in the second column           |
-
-#####test code
-
-``` html 
- some code here
-    <!-- if you aren't using the accordion, uncomment this block: 
-         <p class="external">
-             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
-         </p>
-     -->
-```
-
-{% highlight html linenos %}
-   <!-- if you aren't using the accordion, uncomment this block:
-        <p class="external">
-            <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
-        </p>
-    -->
-{% endhighlight %}
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-{% highlight ruby linenos%}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-
-Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap. Hashtag typewriter
-{% endhighlight %}

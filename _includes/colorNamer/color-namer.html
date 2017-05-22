@@ -1,0 +1,89 @@
+<script>
+  var globalJson = {{site.data.colorsListWikipedia | jsonify}};
+</script>
+<script src="../../../../scripts/nameThatColor.js"></script>
+
+
+<div id="ntc">
+  <div id="picker">
+
+  </div>
+  <div id="colortag">
+    <h2 id="colorname">El Salva<sup>approx.</sup></h2>
+    <div id="colorpick">
+      <select id="colorop">
+        <option value="">Select a Color:</option>
+      </select>
+    </div>
+    <div id="colorbox" style="background-color: rgb(137, 62, 51);"><div id="colorsolid" style="background-color: rgb(143, 62, 51);"></div></div>
+    <div id="colorpanel">
+      <div id="colorhex">Your Color:</div>
+      <input type="text" id="colorinp" class="inputbox" name="color" value="#123456" maxlength="8">
+      <div id="colorrgb">RGB: 137, 62, 51</div>
+      <div>
+        <textarea name="colorsList" id="" cols="30" rows="10"></textarea>
+        <button class="btn btn-primary js_btn-set-colors">set colors</button>
+      </div>
+    </div>
+    <p id="colorlegend">Outer box: Your selected color. Inner box: Actual color of closest match.</p>
+  </div>
+
+  <div class="clear"></div>
+
+</div>
+
+<div class="color-pick-box">
+  <div class="row js__list-wrapper"></div>
+</div>
+
+<script type="text/javascript">
+  var n_match  = ntc.name("#B0BF1A"),
+  n_rgb        = n_match[0], // This is the RGB value of the closest matching color
+  n_name       = n_match[1], // This is the text string for the name of the match
+  n_exactmatch = n_match[2]; // True if exact color match, False if close-match
+
+//  console.log(n_match);
+
+  var $cityWrapper = $('.js__list-wrapper'),
+      $listOption = n_match;
+
+  function addCustomList(sortByNames, className) {
+    //create ul
+    var $ul = $('<ol class="'+className+' custom_select__list">').appendTo($cityWrapper),
+        sortedArr = (sortByNames)? ntc.names.sort( nameComparator ) : ntc.names.sort(hexComparator);
+
+    //put li inside ul
+    sortedArr
+      .map(function (item) {
+      $ul.append(
+        "<li class='custom_select__item' >" +
+        "<p><span style='display: inline-block; width:80px; height: 20px; background-color: #" + item[0] + "'></span><span> " + item[0] + " " + item[1] + "</span></p>" +
+        "</li>"
+      )
+    });
+  }
+
+  function nameComparator(a,b){
+    return (a[1].toLowerCase() > b[1].toLowerCase() ? 1 : (a[1] < b[1] ? -1 : 0));
+  }
+
+  function hexComparator(a,b){
+    return a[0]<b[0]
+  }
+  $('.js_btn-set-colors').on('click', createCustomList);
+
+  function createCustomList(e){
+    var tarea = $('textarea'),
+      tval =tarea.val();
+
+  }
+
+//  addCustomList(false,'col-md-6 sortByColor ml-0 pl-0');
+  //
+  //  addCustomList(true,'col-md-6 sortByNames')
+
+
+</script>
+
+
+<script src="../../../../scripts/components/eventDetectNTC.js"></script>
