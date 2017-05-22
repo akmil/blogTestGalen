@@ -4,7 +4,8 @@
   "description": "travis + galen",
   "main": "index.html",
   "scripts": {
-    "test": "galen check galen-test/home.gspec --url http://localhost:4000/blogTestGalen/ --size 1024x768 --htmlreport galen-test/reports/reports"
+    "test": "galen check galen-test/home.gspec --url http://localhost:4000/blogTestGalen/ --size 1024x768 --htmlreport galen-test/reports/reports",
+    "build-color-namer": "babel js/ColorNamer -d babel js/ColorNamer/build --source-maps"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/akmil/blogTestGalen#readme",
   "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
     "jasmine-core": "^2.3.4"
   }
 }
