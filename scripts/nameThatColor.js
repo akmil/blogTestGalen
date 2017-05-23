@@ -42,11 +42,24 @@ var ntc = {
       color = "#" + ntc.names[i][0];
       rgb = ntc.rgb(color);
       hsl = ntc.hsl(color);
-      ntc.names[i].push(rgb[0], rgb[1], rgb[2], hsl[0], hsl[1], hsl[2]);
+      ntc.names[i].push(rgb[0], rgb[1], rgb[2], hsl[0], hsl[1], hsl[2],rgb[0]+rgb[1]+rgb[2]);
     }
   },
 
-  name: function(color) {
+  name: function(color) {    
+    var opacity = null,
+    isRGB = color.includes('rgb' || 'rgba' || 'RGB' || 'RGBA' &&'('&&')');
+
+    if(isRGB){
+      var colorsOnly = color.substring(color.indexOf('(') + 1, color.lastIndexOf(')')).split(/,\s*/),
+        red = colorsOnly[0],
+        green = colorsOnly[1],
+        blue = colorsOnly[2];
+
+      opacity = colorsOnly[3];
+      // console.log('color',color , parseFloat(opacity));
+      color = ntc.rgb2hex(red,green,blue);
+    }
 
     color = color.toUpperCase();
     if(color.length < 3 || color.length > 7)
@@ -77,8 +90,14 @@ var ntc = {
         cl = i;
       }
     }
-
-    return (cl < 0 ? ["#000000", "Invalid Color: " + color, false] : ["#" + ntc.names[cl][0], ntc.names[cl][1], false]);
+    // if( isRGB ){
+    // console.log('color',color , parseFloat(opacity));
+    // }
+    return (cl < 0
+      ? ["#000000", "Invalid Color: " + color, false]
+      : [(!parseFloat(opacity)) ? "#" + ntc.names[cl][0] : ntc.names[cl][0] + '-' + opacity*100 ,
+        (!parseFloat(opacity)) ? ntc.names[cl][1] : ntc.names[cl][1] + '-' + opacity*100,
+      false]);
   },
 
   // adopted from: Farbtastic 1.2
@@ -115,6 +134,10 @@ var ntc = {
     return [parseInt('0x' + color.substring(1, 3)), parseInt('0x' + color.substring(3, 5)),  parseInt('0x' + color.substring(5, 7))];
   },
 
+  rgb2hex: function(red, green, blue) {
+    var rgb = blue | (green << 8) | (red << 16);
+    return '#' + (0x1000000 + rgb).toString(16).slice(1)
+  },
   //
   mixArray: function(additionalArr,originArr){
     var arr = originArr;

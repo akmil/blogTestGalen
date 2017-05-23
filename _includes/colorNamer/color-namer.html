@@ -4,11 +4,9 @@
 <script src="../../../../scripts/nameThatColor.js"></script>
 
 
-<div id="ntc">
-  <div id="picker">
-
-  </div>
-  <div id="colortag">
+<div id="ntc" class="row">
+  <div id="picker" class="float-left mr-1"></div>
+  <div id="colortag" class="float-left  ml-4">
     <h2 id="colorname">El Salva<sup>approx.</sup></h2>
     <div id="colorpick">
       <select id="colorop">
@@ -20,20 +18,24 @@
       <div id="colorhex">Your Color:</div>
       <input type="text" id="colorinp" class="inputbox" name="color" value="#123456" maxlength="8">
       <div id="colorrgb">RGB: 137, 62, 51</div>
-      <div>
-        <textarea name="colorsList" id="" cols="30" rows="10"></textarea>
-        <button class="btn btn-primary js_btn-set-colors">set colors</button>
-      </div>
     </div>
     <p id="colorlegend">Outer box: Your selected color. Inner box: Actual color of closest match.</p>
   </div>
 
   <div class="clear"></div>
-
 </div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="mb-2">
+      <button class="btn btn-info js_btn-add-text">att testing text</button>
+      <button class="btn btn-primary js_btn-set-colors">set colors</button>
+    </div>
+    <textarea name="colorsList" id="" cols="30" rows="20"></textarea>
+  </div>
 
-<div class="color-pick-box">
-  <div class="row js__list-wrapper"></div>
+  <div class="color-pick-box col-md-6">
+    <div class="js__list-wrapper mt-5"></div>
+  </div>
 </div>
 
 <script type="text/javascript">
@@ -70,13 +72,16 @@
   function hexComparator(a,b){
     return a[0]<b[0]
   }
-  $('.js_btn-set-colors').on('click', createCustomList);
 
-  function createCustomList(e){
-    var tarea = $('textarea'),
-      tval =tarea.val();
-
+  function rgbComparator(a,b){
+    var totalA = 0,totalB = 0,
+//        a = ntc.rgb('#'+a), b = ntc.rgb('#'+b);
+    totalA = a[2]+a[3]+a[4];
+    totalB = b[2]+b[3]+b[4];
+    console.log(a[0] , a[8]);
+    return totalA < totalB && (a[2] < b[2] || a[3] < b[3] || a[4] < b[4])
   }
+
 
 //  addCustomList(false,'col-md-6 sortByColor ml-0 pl-0');
   //
@@ -86,4 +91,5 @@
 </script>
 
 
-<script src="../../../../scripts/components/eventDetectNTC.js"></script>
+<script src="{{'/scripts/colorNamer/eventDetectNTC.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/scripts/colorNamer/extract-colors.js' | prepend: site.baseurl}}"></script>
