@@ -3,7 +3,7 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    //border-bottom: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -98,7 +98,7 @@
  * Site footer
  */
 .site-footer {
-    //border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
@@ -115,7 +115,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $n2-grey-color;
+    color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -186,12 +186,12 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $n2-grey-color;
+    color: $grey-color;
 }
 
 .post-link {
     display: block;
-    font-size: $size-h3;
+    font-size: 24px;
 }
 
 
@@ -209,7 +209,7 @@
     line-height: 1;
 
     @include media-query($on-laptop) {
-        font-size: $size-h2;
+        font-size: 36px;
     }
 }
 
@@ -217,7 +217,7 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: $size-h2;
+        font-size: 32px;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -225,7 +225,7 @@
     }
 
     h3 {
-        font-size: $size-h3;
+        font-size: 26px;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -233,7 +233,7 @@
     }
 
     h4 {
-        font-size: $size-h4;
+        font-size: 20px;
 
         @include media-query($on-laptop) {
             font-size: 18px;

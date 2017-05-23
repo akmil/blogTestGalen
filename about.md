@@ -2,11 +2,6 @@
 layout: page
 title: About
 permalink: /about/
-
-keywords: documentation theme, jekyll, technical writers, help authoring tools, hat replacements
-last_updated: August 12, 2015
-tags: [getting-started]
-summary: "I use this theme for sophisticated single-sourcing projects that I work on as a professional technical writer."
 ---
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/){: .class-name2} 

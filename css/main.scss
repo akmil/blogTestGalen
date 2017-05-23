@@ -3,90 +3,24 @@
 ---
 @charset "utf-8";
 
-/*Ticket Master Style*/
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"), url("https://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2") format("woff2");
-}
 
 
-$base-font-family: "Lato",Helvetica, Arial, sans-serif;
-$base-font-size: 16px;
-
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
 $base-font-weight: 400;
-$bold-font-weight: 700;
-
-
-$lead-font-size:   1.5em;
-$body-font-size:   1em;
-
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$p1: #009cde;
-$secondary-color1: #d0006f;
-$n2-grey-color: #768692;
-$n1: #414141;
-$n3: #b7c9d3;
-$p1a: #158cd2;
-$p1b: #2a7cc7;
-$s1b: #a61f84;
-$s1a: #ba1079;
-$white: #ffffff;
-$white-70: rgba(255, 255, 255, 0.7);
-
-$code-border: #909090;
-$code-background-color: #F8F8F8;
-
-
-/*Fonts*/
-$font-h1: "InterstateWGL-Black",$base-font-family;       // 54/16=3.37500
-$font-h2: "TMSansLEADINGFIXED-Bold",$base-font-family;   // 36
-$font-h3: "TMSansLEADINGFIXED-Bold",$base-font-family;   // 24
-$font-h4: "TMSansLEADINGFIXED-Bold",$base-font-family;   // 16
-$font-h5: "TMSansLEADINGFIXED-Regular",$base-font-family;// 16
-$font-h6: "TMSansLEADINGFIXED-Regular",$base-font-family;// 11
-
-
-$font-lead: "TMSansLEADINGFIXED-Light",$base-font-family;      //24
-$font-body: "TMSansLEADINGFIXED-Regular",$base-font-family;    //16px
-$font-caption: "TMSansLEADINGFIXED-Italic",$base-font-family;  //16px
-$font-pull-q: "TMSansLEADINGFIXED-Italic",$base-font-family;   //24px
-$font-code: "Source Code Pro",$base-font-family;         //16px
-
-
-/*Sizes*/
-$size-h1: 3.375em;  //54px
-$size-h2: 2.25em;   //36px
-$size-h3: 1.5em;    //24px
-$size-h4: 1em;      //16px
-$size-h5: 1em;
-$size-h6: 0.6875em; //11px
-
-
-$size-lead: 1.5em;
-$size-body: 1em;
-$size-caption: 1em;
-$size-pull-q: 1.5em;
-$size-code: 0.9em;
-
 $spacing-unit:     30px;
 
-// Jekyll custom variables
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
 
-$spacing-unit:     30px;
-
-$text-color:       $n2-grey-color;
-$background-color: $white;
-$brand-color:      $p1;
-
-
-$grey-color-light: lighten($n2-grey-color, 40%);
-$grey-color-dark:  darken($n2-grey-color, 25%);
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
@@ -110,74 +44,12 @@ $on-laptop:        800px;
 }
 
 
-h1{
-  font: $font-h1;
-  font-size:$size-h1;
-}
-h2{
-  font: $font-h2 ;
-  font-size: $size-h2;
-}
-
-
-@mixin transition ($time: 0.35s){
-  -webkit-transition: all $time ease;
-  -moz-transition: all $time ease;
-  -o-transition: all $time ease;
-  transition: all $time ease;
-}
-@mixin  border-radius ($r){
-  -webkit-border-radius: $r;
-  -moz-border-radius: $r;
-  border-radius: $r;
-}
-@mixin font-size-lh($size:1.6, $line: $size * 1.5){
-  font-size:   $size + px;
-  line-height: $line + px;
-}
-@mixin img-responsive($display: block) {
-  display: $display;
-  width: 100% \9; // Force IE10 and below to size SVG images correctly
-  max-width: 100%; // Part 1: Set a maximum relative to the parent
-  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
-}
-@mixin rotate($rotate: 0) {
-  -webkit-transform: rotate($rotate + deg);
-  -moz-transform: rotate($rotate + deg);
-  -o-transform: rotate($rotate + deg);
-  -ms-transform: rotate($rotate + deg);
-  transform: rotate($rotate + deg);
-}
-
-@mixin placeholder($color, $opacity: 1 ){
-  &::-webkit-input-placeholder {
-    color: $color;
-    opacity: $opacity;
-  }
-  &:-moz-placeholder { /* Firefox 18- */
-    color: $color;
-    opacity: $opacity;
-  }
-  &::-moz-placeholder {  /* Firefox 19+ */
-    color: $color;
-    opacity: $opacity;
-  }
-  &:-ms-input-placeholder {
-    color: $color;
-    opacity: $opacity;
-  }
-}
-@mixin width($width,$padding){
-  width: $width - $padding*2 + px;
-}
-
-/*Ticket Master Style END*/
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "base",
-  "layout",
-  "syntax-highlighting",
-  "side"
+"bootstrap.min.css",
+"base",
+"layout",
+"syntax-highlighting",
+"components/color-pick-box"
 ;

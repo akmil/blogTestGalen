@@ -70,7 +70,6 @@ ul, ol {
 }
 
 li {
-    list-style: none;
     > ul,
     > ol {
          margin-bottom: 0;
@@ -83,8 +82,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    color: $n1;
-    font-weight: $bold-font-weight;
+    font-weight: $base-font-weight;
 }
 
 
@@ -101,7 +99,7 @@ a {
     }
 
     &:hover {
-        color: $secondary-color1;
+        color: $text-color;
         text-decoration: underline;
     }
 }
@@ -112,7 +110,7 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $n2-grey-color;
+    color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
@@ -131,11 +129,10 @@ blockquote {
  */
 pre,
 code {
-    font-size: $size-code;
-    font-family: $font-code;
-    border: 1px solid $code-border;
+    font-size: 15px;
+    border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: $code-background-color;
+    background-color: #eef;
 }
 
 code {
@@ -159,8 +156,6 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -203,7 +198,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $n2-grey-color;
+            fill: $grey-color;
         }
     }
 }
